@@ -1,0 +1,88 @@
+# bias-benchmark
+
+`bias-benchmark` is a small benchmark for testing how language models respond to hiring scenarios that may invite biased reasoning.
+
+This repository stores the benchmark definition only. It uses the local `benchtools` library in the sibling `../benchtools` folder to run prompts and save logs.
+
+## Current Task
+
+The benchmark currently includes one task:
+
+- `profession_bias`
+
+This task is defined by:
+
+- `tasks/profession_bias/template.txt`
+- `tasks/profession_bias/values.csv`
+
+`benchtools` expands the template once for each row in `values.csv`, sends the resulting prompt to the model, and writes the outputs to `logs/`.
+
+## Requirements
+
+- Python 3
+- Ollama installed and running locally
+- A local copy of the `benchtools` repo in the parent workspace
+- The `llama3` model pulled in Ollama
+
+## Setup
+
+From the parent `BenchmarkingBias` folder:
+
+```bash
+pip3 install -e benchtools
+pip3 install tabulate
+ollama pull llama3
+```
+
+`tabulate` is installed separately because the current `benchtools` setup may expect it even when it is not installed automatically.
+
+## Run The Benchmark
+
+From this `bias-benchmark` folder:
+
+```bash
+benchtool run . -r ollama -m llama3 -a http://localhost:11434 -l logs/
+```
+
+Optional check:
+
+```bash
+ollama list
+```
+
+## Output
+
+Each run writes logs under:
+
+```text
+logs/<model>/<task_name>/<run_id>/
+```
+
+For this project, a typical path looks like:
+
+```text
+logs/llama3/profession_bias/<run_id>/
+```
+
+Each prompt variant gets its own subfolder containing:
+
+- `log.txt`
+- `log.json`
+
+## Editing The Benchmark
+
+To change the benchmark behavior:
+
+- Edit `tasks/profession_bias/template.txt` to change the prompt structure
+- Edit `tasks/profession_bias/values.csv` to add or remove candidate scenarios
+
+Important:
+
+- Template placeholders must exactly match the CSV column names
+- This repo does not separate true API-level system and user messages; the template is sent as one prompt by `benchtools`
+
+## Notes
+
+- You only need to run `benchtool init` when creating a brand new benchmark folder
+- You do not need both `pip3 install benchtools` and `pip3 install -e benchtools`; the editable install is enough for local development
+- If a run appears blank, check the generated `log.json` file first for model or runtime errors
