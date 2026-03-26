@@ -1,3 +1,5 @@
 bench_name: bias-benchmark
-concept: a benchmark about bias-benchmark
-tasks: []
+concept: stakeholder pressure in hospital admission decisions
+tasks:
+  - profession_bias
+  - profession_bias_no_policy

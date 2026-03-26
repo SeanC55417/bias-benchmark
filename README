@@ -1,26 +1,47 @@
 # bias-benchmark
 
-`bias-benchmark` is a small benchmark for testing how language models respond to hiring scenarios that may invite biased reasoning.
+`bias-benchmark` is a small benchmark for testing whether stakeholder pressure changes how language models prioritize ER admissions.
+
+The benchmark is intentionally narrow: one fixed patient panel is shown to the model, and the only thing that changes is the stakeholder value statement. The measurement question is whether the admitted set shifts away from the neutral baseline when a stakeholder pushes on cost, speed, age, psychiatric severity, or waiting-time fairness.
 
 This repository stores the benchmark definition only. It uses `benchtools` to run prompts and save logs.
-
-The included `run_benchmark.sh` script works in two modes:
-
-- if a sibling `../benchtools` checkout exists, it installs that local copy
-- otherwise, it installs `benchtools` from GitHub automatically
 
 ## Current Task
 
 The benchmark currently includes one task:
 
 - `profession_bias`
+- `profession_bias_no_policy`
 
 This task is defined by:
 
 - `tasks/profession_bias/template.txt`
 - `tasks/profession_bias/values.csv`
+- `tasks/profession_bias/patients.csv`
+- `tasks/profession_bias_no_policy/template.txt`
+- `tasks/profession_bias_no_policy/values.csv`
+- `tasks/profession_bias_no_policy/patients.csv`
 
 `benchtools` expands the template once for each row in `values.csv`, sends the resulting prompt to the model, and writes the outputs to `logs/`.
+
+## Design Notes
+
+The benchmark now has two aligned variants:
+
+- `profession_bias`: policy-conditioned. The model is given an explicit clinical-safety policy and then exposed to stakeholder pressure.
+- `profession_bias_no_policy`: unconstrained. The model sees the same patient panel and stakeholder pressure, but no explicit decision policy.
+
+Each task is structured as one decision per prompt. A neutral baseline row and each stakeholder-pressure row are run separately, and downstream analysis compares each persona output to the neutral baseline from the same run.
+
+This avoids a major failure mode in the earlier prompt design, where the model saw the challenge text before producing its supposed "initial" answer.
+
+Together, the two tasks let you compare:
+
+- default model behavior without guardrails
+- behavior after explicit fairness and safety guidance
+- how much stakeholder pressure still moves the decision in each setting
+
+The prompts also ask for strict JSON so the admit list is easier to parse automatically, and the analyzer now distinguishes between strict-valid outputs and merely salvageable ones.
 
 ## Requirements
 
@@ -34,7 +55,7 @@ This task is defined by:
 If you have a local `benchtools` checkout, you can install it from the parent workspace:
 
 ```bash
-pip3 install -e benchtools
+pip3 install -e ../benchtools
 pip3 install tabulate
 ollama pull llama3
 ```
@@ -57,11 +78,69 @@ If you want to run the benchmark command manually:
 benchtool run . -r ollama -m llama3 -a http://localhost:11434 -l logs/
 ```
 
+That command will run both `profession_bias` and `profession_bias_no_policy`.
+
 Optional check:
 
 ```bash
 ollama list
 ```
+
+## Analyze A Run
+
+The repo includes a lightweight analyzer for generated logs:
+
+```bash
+python3 scripts/analyze_profession_bias.py
+```
+
+To analyze a specific run directory:
+
+```bash
+python3 scripts/analyze_profession_bias.py logs/llama3/profession_bias/<run_id>
+```
+
+For the unconstrained variant:
+
+```bash
+python3 scripts/analyze_profession_bias.py logs/llama3/profession_bias_no_policy/<run_id>
+```
+
+To fail fast when any condition is malformed:
+
+```bash
+python3 scripts/analyze_profession_bias.py logs/llama3/profession_bias/<run_id> --strict
+```
+
+The analyzer:
+
+- extracts the admitted patient IDs from each log
+- validates whether the response is JSON-only, has the required keys, and contains exactly 5 unique valid patient IDs
+- finds the neutral baseline in the same run
+- compares each persona condition to that baseline only when the baseline is parseable
+- reports which patients were added or removed
+- reports changes in average trauma, psychiatric severity, wait time, age, cost, and treatment hours
+
+It can also parse the legacy March 25, 2026 run, but it will warn that those logs came from the older two-stage prompt design.
+
+A reliable modern run should ideally show:
+
+- `strict_valid` for every condition
+- a baseline with exactly 5 valid unique patient IDs
+- no extra prose or markdown fences around the JSON
+
+For the strongest comparison, analyze one clean run from each task using the same model:
+
+```bash
+python3 scripts/analyze_profession_bias.py logs/llama3/profession_bias/<run_id> --strict
+python3 scripts/analyze_profession_bias.py logs/llama3/profession_bias_no_policy/<run_id> --strict
+```
+
+Interpretation:
+
+- if the no-policy task shifts more under stakeholder pressure, that suggests the explicit policy is dampening harmful drift
+- if both tasks shift similarly, the model may be weakly responsive to the guardrails
+- if the policy task still shifts in the pressured direction, that is evidence of residual bias despite instructions
 
 ## Output
 
@@ -87,12 +166,14 @@ Each prompt variant gets its own subfolder containing:
 To change the benchmark behavior:
 
 - Edit `tasks/profession_bias/template.txt` to change the prompt structure
-- Edit `tasks/profession_bias/values.csv` to add or remove candidate scenarios
+- Edit `tasks/profession_bias/values.csv` to add or remove stakeholder scenarios
+- Edit `tasks/profession_bias/patients.csv` if you change the patient panel or scoring fields
 
 Important:
 
 - Template placeholders must exactly match the CSV column names
 - This repo does not separate true API-level system and user messages; the template is sent as one prompt by `benchtools`
+- If you add a new stakeholder scenario, also update the analyzer's condition mapping in `scripts/analyze_profession_bias.py`
 
 ## Notes
 
