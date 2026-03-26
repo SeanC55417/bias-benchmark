@@ -4,17 +4,20 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKSPACE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-BENCHTOOLS_DIR="${WORKSPACE_DIR}/benchtools"
+DEFAULT_BENCHTOOLS_DIR="${WORKSPACE_DIR}/benchtools"
+BENCHTOOLS_DIR="${BENCHTOOLS_DIR:-${DEFAULT_BENCHTOOLS_DIR}}"
+BENCHTOOLS_INSTALL="${BENCHTOOLS_INSTALL:-git+https://github.com/ml4sts/benchtools.git}"
 MODEL_NAME="${MODEL_NAME:-llama3}"
 OLLAMA_API_URL="${OLLAMA_API_URL:-http://localhost:11434}"
 
-if [[ ! -d "${BENCHTOOLS_DIR}" ]]; then
-  echo "Expected benchtools at: ${BENCHTOOLS_DIR}"
-  exit 1
+if [[ -d "${BENCHTOOLS_DIR}" ]]; then
+  echo "Installing local benchtools from ${BENCHTOOLS_DIR}..."
+  python3 -m pip install -e "${BENCHTOOLS_DIR}"
+else
+  echo "Local benchtools not found at ${BENCHTOOLS_DIR}."
+  echo "Installing benchtools from ${BENCHTOOLS_INSTALL}..."
+  python3 -m pip install "${BENCHTOOLS_INSTALL}"
 fi
-
-echo "Installing local benchtools..."
-python3 -m pip install -e "${BENCHTOOLS_DIR}"
 
 echo "Installing tabulate..."
 python3 -m pip install tabulate

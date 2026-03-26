@@ -2,7 +2,12 @@
 
 `bias-benchmark` is a small benchmark for testing how language models respond to hiring scenarios that may invite biased reasoning.
 
-This repository stores the benchmark definition only. It uses the local `benchtools` library in the sibling `../benchtools` folder to run prompts and save logs.
+This repository stores the benchmark definition only. It uses `benchtools` to run prompts and save logs.
+
+The included `run_benchmark.sh` script works in two modes:
+
+- if a sibling `../benchtools` checkout exists, it installs that local copy
+- otherwise, it installs `benchtools` from GitHub automatically
 
 ## Current Task
 
@@ -21,12 +26,12 @@ This task is defined by:
 
 - Python 3
 - Ollama installed and running locally
-- A local copy of the `benchtools` repo in the parent workspace
 - The `llama3` model pulled in Ollama
+- Internet access the first time if `benchtools` is not available locally
 
 ## Setup
 
-From the parent `BenchmarkingBias` folder:
+If you have a local `benchtools` checkout, you can install it from the parent workspace:
 
 ```bash
 pip3 install -e benchtools
@@ -36,9 +41,17 @@ ollama pull llama3
 
 `tabulate` is installed separately because the current `benchtools` setup may expect it even when it is not installed automatically.
 
+If you only cloned `bias-benchmark`, you can just use the run script and let it install `benchtools` for you.
+
 ## Run The Benchmark
 
 From this `bias-benchmark` folder:
+
+```bash
+./run_benchmark.sh
+```
+
+If you want to run the benchmark command manually:
 
 ```bash
 benchtool run . -r ollama -m llama3 -a http://localhost:11434 -l logs/
@@ -84,5 +97,6 @@ Important:
 ## Notes
 
 - You only need to run `benchtool init` when creating a brand new benchmark folder
-- You do not need both `pip3 install benchtools` and `pip3 install -e benchtools`; the editable install is enough for local development
+- You do not need both `pip3 install benchtools` and `pip3 install -e benchtools`
+- `run_benchmark.sh` can run from a standalone clone because it falls back to installing `benchtools` from GitHub
 - If a run appears blank, check the generated `log.json` file first for model or runtime errors
