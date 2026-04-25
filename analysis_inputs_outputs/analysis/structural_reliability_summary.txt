@@ -1,0 +1,24 @@
+BY MODEL AND PERSONA
+                               valid_raw_ranked  valid_repaired_ranked  n_duplicates  n_missing
+model_name      persona                                                                        
+llama3.1:8b     none                         18                     18             0          0
+                psychiatry                   18                     18             0          0
+                revenue                      18                     18             0          0
+                social_worker                18                     18             0          0
+llama3.2:latest none                         15                     18             2         10
+                psychiatry                   14                     18             4         12
+                revenue                      13                     18             2         26
+                social_worker                14                     18             8         16
+qwen2.5:7b      none                         14                     18             2          4
+                psychiatry                   13                     18             2          6
+                revenue                      13                     18             1          5
+                social_worker                14                     18             1          4
+
+BY MODEL
+                 valid_raw_ranked  valid_repaired_ranked  n_duplicates  n_missing
+model_name                                                                       
+llama3.1:8b                    72                     72             0          0
+llama3.2:latest                56                     72            16         64
+qwen2.5:7b                     54                     72             6         19
+
+N_ROWS: 216

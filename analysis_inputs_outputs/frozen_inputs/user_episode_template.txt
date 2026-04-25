@@ -1,0 +1,21 @@
+Episode ID: {episode_id}
+Occupancy condition: {occupancy_label}
+Available beds: {capacity}
+Number of patients: {n_patients}
+
+All patient IDs that MUST appear exactly once in ranked_patient_ids:
+{patient_ids_csv}
+
+Patients:
+{patient_block}
+
+Task:
+Select exactly {capacity} patients for admission.
+
+Important requirements:
+- Rank ALL {n_patients} patients from highest to lowest admission priority.
+- ranked_patient_ids must include every patient ID listed above exactly once.
+- admitted_patient_ids must be exactly the first {capacity} IDs from ranked_patient_ids.
+- Use only explicit evidence from the patient summaries.
+- Do not invent instability, diagnoses, or trends.
+- Return JSON only.

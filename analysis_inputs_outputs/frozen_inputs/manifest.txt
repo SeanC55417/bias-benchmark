@@ -1,0 +1,8 @@
+Experiment 2: disjoint episode benchmark
+Episodes file: task1_episodes_disjoint.jsonl
+Episodes: 18
+Episode size: 12
+Capacity: 4
+Prompt conditions: none, social_worker, revenue, psychiatry
+Models: llama3.1:8b, qwen2.5:7b, llama3.2:latest
+Main benchmark question: persona-induced drift in capacity-constrained admission decisions

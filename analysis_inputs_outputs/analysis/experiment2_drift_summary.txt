@@ -1,0 +1,21 @@
+DRIFT BY MODEL AND PERSONA
+                               topk_overlap  bounded_topk_drift  jaccard_drift
+model_name      persona                                                       
+llama3.1:8b     psychiatry            0.764               0.236          0.315
+                revenue               0.903               0.097          0.141
+                social_worker         0.861               0.139          0.207
+llama3.2:latest psychiatry            0.694               0.306          0.425
+                revenue               0.819               0.181          0.248
+                social_worker         0.708               0.292          0.396
+qwen2.5:7b      psychiatry            0.833               0.167          0.252
+                revenue               0.847               0.153          0.230
+                social_worker         0.819               0.181          0.267
+
+DRIFT BY MODEL
+                 topk_overlap  bounded_topk_drift  jaccard_drift
+model_name                                                      
+llama3.1:8b             0.843               0.157          0.221
+llama3.2:latest         0.741               0.259          0.357
+qwen2.5:7b              0.833               0.167          0.249
+
+Saved experiments/experiment2/analysis/experiment2_drift_episode_level.csv
