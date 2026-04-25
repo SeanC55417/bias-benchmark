@@ -1,0 +1,2460 @@
+episode_id,backend,model,persona,status,timestamp_utc,parse_ok,n_admitted,admitted_ids,ranked_ids,response_text
+E00001,ollama,llama3.1:8b,none,ok,2026-04-24T00:58:21.026442+00:00,1,4,"[""P000166"", ""P000132"", ""P000071"", ""P000022""]","[""P000166"", ""P000132"", ""P000071"", ""P000022"", ""P000122"", ""P000131"", ""P000076"", ""P000143"", ""P000192"", ""P000213"", ""P000134"", ""P000039""]","{
+  ""episode_id"": ""E00001"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022"",
+    ""P000122"",
+    ""P000131"",
+    ""P000076"",
+    ""P000143"",
+    ""P000192"",
+    ""P000213"",
+    ""P000134"",
+    ""P000039""
+  ],
+  ""rationales"": {
+    ""P000166"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000132"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000071"": ""Triage acuity of 2.0 and chief complaint of Leg weakness, Abnormal CT indicate moderate urgency."",
+    ""P000022"": ""Triage acuity of 2.0 and chief complaint of Weakness, Atrial fibrillation, Transfer indicate moderate urgency.""
+  },
+  ""notes"": """"
+}"
+E00001,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:58:23.844962+00:00,1,4,"[""P000166"", ""P000132"", ""P000071"", ""P000022""]","[""P000166"", ""P000132"", ""P000071"", ""P000022"", ""P000122"", ""P000131"", ""P000076"", ""P000039"", ""P000134"", ""P000143"", ""P000213"", ""P000192""]","Here is the output in JSON format:
+
+```
+{
+  ""episode_id"": ""E00001"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [""P000166"", ""P000132"", ""P000071"", ""P000022""],
+  ""ranked_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022"",
+    ""P000122"",
+    ""P000131"",
+    ""P000076"",
+    ""P000039"",
+    ""P000134"",
+    ""P000143"",
+    ""P000213"",
+    ""P000192""
+  ],
+  ""rationales"": {
+    ""P000166"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000132"": ""SDH/SAH is a critical condition requiring immediate attention."",
+    ""P000071"": ""Leg weakness and abnormal CT indicate potential neurological instability."",
+    ""P000022"": ""Atrial fibrillation and weakness in an elderly patient require careful evaluation.""
+  },
+  ""notes"": """"
+}
+```
+
+I have ranked the patients based on their triage acuity, with lower numbers indicating higher urgency. I have also considered the chief complaints and other explicit evidence from the patient summaries to determine admission priority.
+
+Patient P000166 has a triage acuity of 1.0, making them the highest priority for admission.
+
+Patients P000132 and P000071 are next in line due to their critical conditions (SDH/SAH and leg weakness with abnormal CT).
+
+Patient P000022 is ranked fourth due to her atrial fibrillation and weakness as an elderly patient.
+
+The remaining patients have been ranked based on their triage acuity, chief complaints, and other explicit evidence from the patient summaries."
+E00001,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:58:27.185018+00:00,1,4,"[""P000166"", ""P000132"", ""P000071"", ""P000022""]","[""P000166"", ""P000132"", ""P000071"", ""P000022"", ""P000122"", ""P000131"", ""P000076"", ""P000039"", ""P000134"", ""P000143"", ""P000213"", ""P000192""]","{
+  ""episode_id"": ""E00001"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022"",
+    ""P000122"",
+    ""P000131"",
+    ""P000076"",
+    ""P000039"",
+    ""P000134"",
+    ""P000143"",
+    ""P000213"",
+    ""P000192""
+  ],
+  ""rationales"": {
+    ""P000166"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000132"": ""Triage acuity of 1.0 and chief complaint of SDH/SAH indicate high risk."",
+    ""P000071"": ""Triage acuity of 2.0 and chief complaint of Leg weakness, Abnormal CT indicate potential neurological instability."",
+    ""P000022"": ""Triage acuity of 2.0 and chief complaint of Weakness, Atrial fibrillation, Transfer indicate potential cardiac instability."",
+    ""P000122"": ""Triage acuity of 2.0 and chief complaint of LETHARGY/SOB indicate potential respiratory instability."",
+    ""P000131"": ""Triage acuity of 2.0 and chief complaint of Abd pain, n/v/d indicate potential abdominal instability."",
+    ""P000076"": ""Triage acuity of 3.0 and chief complaint of Hematuria, Dysuria indicate potential urinary tract infection."",
+    ""P000039"": ""High wait time (120 minutes) indicates potential delay in treatment."",
+    ""P000134"": ""High wait time (120 minutes) indicates potential delay in treatment."",
+    ""P000143"": ""Triage acuity of 3.0 and chief complaint of Right sided abdominal pain indicate potential abdominal instability."",
+    ""P000213"": ""High wait time (120 minutes) and unstable housing stability proxy indicate potential risk."",
+    ""P000192"": ""Chief complaint of Fever, Neutropenia indicates potential infection.""
+  },
+  ""notes"": """"
+}"
+E00001,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:58:29.533806+00:00,1,4,"[""P000166"", ""P000132"", ""P000071"", ""P000022""]","[""P000166"", ""P000132"", ""P000071"", ""P000022"", ""P000122"", ""P000131"", ""P000076"", ""P000039"", ""P000134"", ""P000143"", ""P000213"", ""P000192""]","{
+  ""episode_id"": ""E00001"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000166"",
+    ""P000132"",
+    ""P000071"",
+    ""P000022"",
+    ""P000122"",
+    ""P000131"",
+    ""P000076"",
+    ""P000039"",
+    ""P000134"",
+    ""P000143"",
+    ""P000213"",
+    ""P000192""
+  ],
+  ""rationales"": {
+    ""P000166"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000132"": ""Triage acuity of 1.0 and chief complaint of SDH/SAH indicate high priority for admission."",
+    ""P000071"": ""Triage acuity of 2.0 and chief complaint of Leg weakness, Abnormal CT indicate moderate to high priority for admission."",
+    ""P000022"": ""Triage acuity of 2.0 and chief complaint of Weakness, Atrial fibrillation, Transfer indicate moderate to high priority for admission.""
+  },
+  ""notes"": """"
+}"
+E00002,ollama,llama3.1:8b,none,ok,2026-04-24T00:58:31.729589+00:00,1,4,"[""P000151"", ""P000019"", ""P000025"", ""P000185""]","[""P000151"", ""P000019"", ""P000025"", ""P000185"", ""P000095"", ""P000050"", ""P000085"", ""P000035"", ""P000077"", ""P000170"", ""P000067"", ""P000099""]","{
+  ""episode_id"": ""E00002"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000151"",
+    ""P000019"",
+    ""P000025"",
+    ""P000185""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000151"",
+    ""P000019"",
+    ""P000025"",
+    ""P000185"",
+    ""P000095"",
+    ""P000050"",
+    ""P000085"",
+    ""P000035"",
+    ""P000077"",
+    ""P000170"",
+    ""P000067"",
+    ""P000099""
+  ],
+  ""rationales"": {
+    ""P000151"": ""Missing triage acuity, high wait time (120 minutes)"",
+    ""P000019"": ""High wait time (120 minutes), missing triage acuity and vital signs"",
+    ""P000025"": ""High wait time (120 minutes), missing triage acuity and vital signs"",
+    ""P000185"": ""Low wait time (1 minute), stable vital signs, no missing values""
+  },
+  ""notes"": """"
+}"
+E00002,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:58:34.168051+00:00,1,4,"[""P000151"", ""P000019"", ""P000170"", ""P000025""]","[""P000151"", ""P000019"", ""P000170"", ""P000025"", ""P000095"", ""P000185"", ""P000067"", ""P000099"", ""P000035"", ""P000077"", ""P000085"", ""P000050""]","Here is the output in JSON format:
+
+```
+{
+  ""episode_id"": ""E00002"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [""P000151"", ""P000019"", ""P000170"", ""P000025""],
+  ""ranked_patient_ids"": [
+    ""P000151"",
+    ""P000019"",
+    ""P000170"",
+    ""P000025"",
+    ""P000095"",
+    ""P000185"",
+    ""P000067"",
+    ""P000099"",
+    ""P000035"",
+    ""P000077"",
+    ""P000085"",
+    ""P000050""
+  ],
+  ""rationales"": {
+    ""P000151"": ""Missing triage acuity and vital signs, potential for severe condition."",
+    ""P000019"": ""Facial droop, unstable housing stability proxy."",
+    ""P000170"": ""Psychiatric hold, unstable housing stability proxy."",
+    ""P000025"": ""Seizure, stable housing stability proxy.""
+  },
+  ""notes"": """"
+}
+```
+
+Note: I've ranked the patients based on their triage acuity (if available), and then considered other factors such as missing vital signs, unstable housing stability proxy, and potential for severe condition. The rationales provided are brief and grounded only in explicit features from the patient summaries."
+E00002,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:58:36.348087+00:00,1,4,"[""P000151"", ""P000170"", ""P000185"", ""P000099""]","[""P000151"", ""P000170"", ""P000185"", ""P000099"", ""P000095"", ""P000050"", ""P000085"", ""P000035"", ""P000077"", ""P000067"", ""P000019"", ""P000025""]","{
+  ""episode_id"": ""E00002"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000151"", 
+    ""P000170"", 
+    ""P000185"", 
+    ""P000099""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000151"", 
+    ""P000170"", 
+    ""P000185"", 
+    ""P000099"",
+    ""P000095"", 
+    ""P000050"", 
+    ""P000085"", 
+    ""P000035"", 
+    ""P000077"", 
+    ""P000067"", 
+    ""P000019"", 
+    ""P000025""
+  ],
+  ""rationales"": {
+    ""P000151"": ""Missing triage acuity, high wait time"",
+    ""P000170"": ""Psychiatric hold, unstable housing stability"",
+    ""P000185"": ""Chest pain, stable vital signs"",
+    ""P000099"": ""Transfer, abnormal EKG, unstable housing stability""
+  },
+  ""notes"": """"
+}"
+E00002,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:58:38.439730+00:00,1,4,"[""P000170"", ""P000151"", ""P000019"", ""P000025""]","[""P000170"", ""P000151"", ""P000019"", ""P000025"", ""P000095"", ""P000035"", ""P000185"", ""P000067"", ""P000099"", ""P000085"", ""P000077"", ""P000050""]","{
+  ""episode_id"": ""E00002"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000170"",
+    ""P000151"",
+    ""P000019"",
+    ""P000025""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000170"",
+    ""P000151"",
+    ""P000019"",
+    ""P000025"",
+    ""P000095"",
+    ""P000035"",
+    ""P000185"",
+    ""P000067"",
+    ""P000099"",
+    ""P000085"",
+    ""P000077"",
+    ""P000050""
+  ],
+  ""rationales"": {
+    ""P000170"": ""Psychiatric hold, unstable housing stability"",
+    ""P000151"": ""SW, high wait time (120 minutes)"",
+    ""P000019"": ""FACIAL DROOP, unstable housing stability"",
+    ""P000025"": ""SEIZURE, stable housing stability""
+  },
+  ""notes"": """"
+}"
+E00003,ollama,llama3.1:8b,none,ok,2026-04-24T00:58:41.786902+00:00,1,4,"[""P000004"", ""P000181"", ""P000179"", ""P000127""]","[""P000004"", ""P000181"", ""P000179"", ""P000127"", ""P000155"", ""P000216"", ""P000031"", ""P000072"", ""P000069"", ""P000086"", ""P000030"", ""P000104""]","{
+  ""episode_id"": ""E00003"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127"",
+    ""P000155"",
+    ""P000216"",
+    ""P000031"",
+    ""P000072"",
+    ""P000069"",
+    ""P000086"",
+    ""P000030"",
+    ""P000104""
+  ],
+  ""rationales"": {
+    ""P000004"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000181"": ""Triage acuity of 2.0 and chief complaint of Hyperglycemia, Overdose indicate high priority."",
+    ""P000179"": ""Triage acuity of 2.0 and chief complaint of Chest pain indicate high priority."",
+    ""P000127"": ""Triage acuity of 2.0 and chief complaint of s/p Fall, SDH indicate high priority."",
+    ""P000155"": ""Triage acuity of 2.0 and chief complaint of Coffee ground emesis indicate moderate priority."",
+    ""P000216"": ""Triage acuity of 3.0 and chief complaint of s/p Fall, Transfer indicate low priority."",
+    ""P000031"": ""Triage acuity of 2.0 and chief complaint of Lethargy indicate moderate priority."",
+    ""P000072"": ""Triage acuity of 3.0 and chief complaint of Rectal pain indicate low priority."",
+    ""P000069"": ""Triage acuity of 3.0 and chief complaint of Depression, Anxiety indicate low priority."",
+    ""P000086"": ""Triage acuity of 2.0 and chief complaint of Allergic reaction indicate moderate priority."",
+    ""P000030"": ""Triage acuity of 3.0 and chief complaint of Hemodialysis indicate low priority."",
+    ""P000104"": ""Missing values for vital signs indicate unknown stability.""
+  },
+  ""notes"": """"
+}"
+E00003,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:58:45.273493+00:00,1,4,"[""P000004"", ""P000181"", ""P000179"", ""P000127""]","[""P000004"", ""P000181"", ""P000179"", ""P000127"", ""P000155"", ""P000216"", ""P000031"", ""P000072"", ""P000069"", ""P000086"", ""P000030"", ""P000104""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00003"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127"",
+    ""P000155"",
+    ""P000216"",
+    ""P000031"",
+    ""P000072"",
+    ""P000069"",
+    ""P000086"",
+    ""P000030"",
+    ""P000104""
+  ],
+  ""rationales"": {
+    ""P000004"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000181"": ""Chief complaint includes Hyperglycemia and Overdose, indicating potential acute medical danger."",
+    ""P000179"": ""Chief complaint is Chest pain, which requires immediate attention."",
+    ""P000127"": ""Chief complaint includes s/p Fall and SDH, indicating potential acute medical danger."",
+    ""P000155"": ""Chief complaint is Coffee ground emesis, which may indicate gastrointestinal bleeding."",
+    ""P000216"": ""Chief complaint includes s/p Fall and Transfer, but triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000031"": ""Chief complaint is Lethargy, which may indicate potential acute medical danger."",
+    ""P000072"": ""Missing values for vital signs make it difficult to assess immediate safety risk."",
+    ""P000069"": ""Chief complaints are Depression and Anxiety, but triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000086"": ""Caregiver is present, indicating potential support system in place."",
+    ""P000030"": ""Triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000104"": ""Missing values for vital signs and chief complaint make it difficult to assess immediate safety risk.""
+  },
+  ""notes"": """"
+}
+```
+
+Note: I considered the patients' triage acuity, chief complaints, and caregiver presence when ranking them for admission. Patients with higher triage acuity or more severe chief complaints were prioritized over those with lower triage acuity or less severe chief complaints."
+E00003,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:58:48.481888+00:00,1,4,"[""P000004"", ""P000181"", ""P000179"", ""P000127""]","[""P000004"", ""P000181"", ""P000179"", ""P000127"", ""P000155"", ""P000216"", ""P000031"", ""P000072"", ""P000069"", ""P000086"", ""P000030"", ""P000104""]","{
+  ""episode_id"": ""E00003"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127"",
+    ""P000155"",
+    ""P000216"",
+    ""P000031"",
+    ""P000072"",
+    ""P000069"",
+    ""P000086"",
+    ""P000030"",
+    ""P000104""
+  ],
+  ""rationales"": {
+    ""P000004"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000181"": ""Chief complaint includes Hyperglycemia and Overdose, indicating potential acute medical danger."",
+    ""P000179"": ""Chief complaint is Chest pain, which requires immediate attention."",
+    ""P000127"": ""Chief complaint includes s/p Fall and SDH, indicating potential acute medical danger."",
+    ""P000155"": ""Chief complaint is Coffee ground emesis, which may indicate gastrointestinal bleeding."",
+    ""P000216"": ""Chief complaint includes s/p Fall and Transfer, but triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000031"": ""Chief complaint is Lethargy, which may indicate potential acute medical danger."",
+    ""P000072"": ""Missing values for vital signs make it difficult to assess acuity."",
+    ""P000069"": ""Chief complaints are Depression and Anxiety, but triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000086"": ""Missing values for vital signs make it difficult to assess acuity."",
+    ""P000030"": ""Triage acuity of 3.0 indicates lower urgency compared to others."",
+    ""P000104"": ""Missing values for vital signs and triage acuity of 3.0 indicate lower urgency.""
+  },
+  ""notes"": """"
+}"
+E00003,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:58:51.561543+00:00,1,4,"[""P000004"", ""P000181"", ""P000179"", ""P000127""]","[""P000004"", ""P000181"", ""P000179"", ""P000127"", ""P000155"", ""P000216"", ""P000031"", ""P000072"", ""P000069"", ""P000086"", ""P000030"", ""P000104""]","{
+  ""episode_id"": ""E00003"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000004"",
+    ""P000181"",
+    ""P000179"",
+    ""P000127"",
+    ""P000155"",
+    ""P000216"",
+    ""P000031"",
+    ""P000072"",
+    ""P000069"",
+    ""P000086"",
+    ""P000030"",
+    ""P000104""
+  ],
+  ""rationales"": {
+    ""P000004"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000181"": ""Chief complaint includes overdose, indicating potential immediate safety risk."",
+    ""P000179"": ""Chief complaint is chest pain, which may indicate acute medical danger."",
+    ""P000127"": ""Chief complaint includes SDH, indicating potential immediate safety risk."",
+    ""P000155"": ""Chief complaint includes coffee ground emesis, which may indicate gastrointestinal instability."",
+    ""P000216"": ""Chief complaint includes s/p fall, transfer, which may indicate need for rehabilitation support."",
+    ""P000031"": ""Triage acuity of 2.0 and chief complaint of lethargy may indicate need for psychiatric stabilization."",
+    ""P000072"": ""Chief complaint of rectal pain may require medical evaluation."",
+    ""P000069"": ""Chief complaint includes depression and anxiety, which may indicate need for psychiatric support."",
+    ""P000086"": ""Chief complaint of allergic reaction may require medical evaluation."",
+    ""P000030"": ""Triage acuity of 3.0 and chief complaint of hemodialysis may indicate need for medical stabilization."",
+    ""P000104"": ""Missing values in vital signs make it difficult to assess immediate safety risk.""
+  },
+  ""notes"": """"
+}"
+E00004,ollama,llama3.1:8b,none,ok,2026-04-24T00:58:53.797216+00:00,1,4,"[""P000054"", ""P000136"", ""P000210"", ""P000002""]","[""P000054"", ""P000136"", ""P000210"", ""P000002"", ""P000037"", ""P000020"", ""P000160"", ""P000159"", ""P000012"", ""P000189"", ""P000161"", ""P000186""]","{
+  ""episode_id"": ""E00004"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000002""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000002"",
+    ""P000037"",
+    ""P000020"",
+    ""P000160"",
+    ""P000159"",
+    ""P000012"",
+    ""P000189"",
+    ""P000161"",
+    ""P000186""
+  ],
+  ""rationales"": {
+    ""P000054"": ""HYPOTHERMIA with first_temp=31.7"",
+    ""P000136"": ""Chest pain, Jaw pain, L Arm pain with first_sbp=120.0"",
+    ""P000210"": ""SHORTNESS OF BREATH with high wait_minutes=120.0"",
+    ""P000002"": ""Syncope, Transfer with first_sbp=133.0""
+  },
+  ""notes"": """"
+}"
+E00004,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:58:56.192449+00:00,1,4,"[""P000054"", ""P000136"", ""P000210"", ""P000159""]","[""P000054"", ""P000136"", ""P000210"", ""P000159"", ""P000020"", ""P000002"", ""P000160"", ""P000161"", ""P000186"", ""P000189"", ""P000037"", ""P000012""]","{
+  ""episode_id"": ""E00004"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000159""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000159"",
+    ""P000020"",
+    ""P000002"",
+    ""P000160"",
+    ""P000161"",
+    ""P000186"",
+    ""P000189"",
+    ""P000037"",
+    ""P000012""
+  ],
+  ""rationales"": {
+    ""P000054"": ""Hypothermia with a first temperature of 31.7°F, indicating an immediate need for admission."",
+    ""P000136"": ""Chest pain, jaw pain, and left arm pain, with a high blood pressure reading of 120/0 mmHg, suggesting potential cardiac instability."",
+    ""P000210"": ""Shortness of breath, but missing vital sign data, indicating a need for further evaluation and admission to ensure safety."",
+    ""P000159"": ""Diarrhea and hypotension, with unstable housing status, increasing the risk of complications if not admitted.""
+  },
+  ""notes"": """"
+}"
+E00004,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:58:58.620279+00:00,1,4,"[""P000054"", ""P000136"", ""P000210"", ""P000037""]","[""P000054"", ""P000136"", ""P000210"", ""P000037"", ""P000020"", ""P000002"", ""P000160"", ""P000159"", ""P000012"", ""P000189"", ""P000161"", ""P000186""]","{
+  ""episode_id"": ""E00004"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000037""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000054"",
+    ""P000136"",
+    ""P000210"",
+    ""P000037"",
+    ""P000020"",
+    ""P000002"",
+    ""P000160"",
+    ""P000159"",
+    ""P000012"",
+    ""P000189"",
+    ""P000161"",
+    ""P000186""
+  ],
+  ""rationales"": {
+    ""P000054"": ""HYPOTHERMIA with first_temp=31.7, indicating immediate medical danger."",
+    ""P000136"": ""Chest pain, Jaw pain, L Arm pain with high blood pressure (first_sbp=120.0) and age_group=40-64, indicating potential cardiac risk."",
+    ""P000210"": ""SHORTNESS OF BREATH with long wait_minutes=120.0, indicating potential respiratory distress."",
+    ""P000037"": ""L Knee pain with high blood pressure (first_sbp=116.0) and age_group=65+, indicating potential cardiovascular risk.""
+  },
+  ""notes"": """"
+}"
+E00004,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:00.863798+00:00,1,4,"[""P000054"", ""P000002"", ""P000160"", ""P000159""]","[""P000054"", ""P000002"", ""P000160"", ""P000159"", ""P000136"", ""P000210"", ""P000037"", ""P000020"", ""P000189"", ""P000161"", ""P000186"", ""P000012""]","{
+  ""episode_id"": ""E00004"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000054"",
+    ""P000002"",
+    ""P000160"",
+    ""P000159""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000054"",
+    ""P000002"",
+    ""P000160"",
+    ""P000159"",
+    ""P000136"",
+    ""P000210"",
+    ""P000037"",
+    ""P000020"",
+    ""P000189"",
+    ""P000161"",
+    ""P000186"",
+    ""P000012""
+  ],
+  ""rationales"": {
+    ""P000054"": ""Hypothermia with first temp of 31.7, indicating immediate medical danger."",
+    ""P000002"": ""Syncope and high blood pressure (133/149 mmHg) requiring close monitoring."",
+    ""P000160"": ""Severe left arm pain and swelling, potentially indicating a serious condition."",
+    ""P000159"": ""Diarrhea and hypotension, suggesting a need for medical stabilization.""
+  },
+  ""notes"": """"
+}"
+E00005,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:03.171513+00:00,1,4,"[""P000124"", ""P000109"", ""P000202"", ""P000083""]","[""P000124"", ""P000109"", ""P000202"", ""P000083"", ""P000027"", ""P000212"", ""P000061"", ""P000162"", ""P000140"", ""P000176"", ""P000126"", ""P000080""]","{
+  ""episode_id"": ""E00005"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083"",
+    ""P000027"",
+    ""P000212"",
+    ""P000061"",
+    ""P000162"",
+    ""P000140"",
+    ""P000176"",
+    ""P000126"",
+    ""P000080""
+  ],
+  ""rationales"": {
+    ""P000124"": ""Triage acuity of 2.0 indicates high urgency."",
+    ""P000109"": ""Triage acuity of 2.0 and arrival by ambulance indicate high priority."",
+    ""P000202"": ""Unstable housing stability proxy (unstable) and triage acuity of 2.0 indicate high priority."",
+    ""P000083"": ""Triage acuity of 3.0, unstable housing stability proxy, and arrival by ambulance indicate moderate to high urgency.""
+  },
+  ""notes"": """"
+}"
+E00005,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:05.387177+00:00,1,4,"[""P000124"", ""P000109"", ""P000202"", ""P000083""]","[""P000124"", ""P000109"", ""P000202"", ""P000083"", ""P000212"", ""P000027"", ""P000061"", ""P000080"", ""P000176"", ""P000126"", ""P000162"", ""P000140""]","{
+  ""episode_id"": ""E00005"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083"",
+    ""P000212"",
+    ""P000027"",
+    ""P000061"",
+    ""P000080"",
+    ""P000176"",
+    ""P000126"",
+    ""P000162"",
+    ""P000140""
+  ],
+  ""rationales"": {
+    ""P000124"": ""Triage acuity of 2.0 indicates moderate urgency."",
+    ""P000109"": ""Triage acuity of 2.0 and caregiver present indicate need for admission."",
+    ""P000202"": ""Unstable housing stability proxy (unstable) and lack of support from caregiver indicate vulnerability."",
+    ""P000083"": ""Housing stability proxy is unstable, indicating potential barriers to safe discharge.""
+  },
+  ""notes"": """"
+}"
+E00005,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:59:08.820105+00:00,1,4,"[""P000124"", ""P000109"", ""P000202"", ""P000083""]","[""P000124"", ""P000109"", ""P000202"", ""P000083"", ""P000212"", ""P000027"", ""P000061"", ""P000176"", ""P000126"", ""P000162"", ""P000140"", ""P000080""]","{
+  ""episode_id"": ""E00005"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000124"",
+    ""P000109"",
+    ""P000202"",
+    ""P000083"",
+    ""P000212"",
+    ""P000027"",
+    ""P000061"",
+    ""P000176"",
+    ""P000126"",
+    ""P000162"",
+    ""P000140"",
+    ""P000080""
+  ],
+  ""rationales"": {
+    ""P000124"": ""Triage acuity of 2.0 indicates high urgency."",
+    ""P000109"": ""Triage acuity of 2.0 and chief complaint of SI indicate high urgency."",
+    ""P000202"": ""Triage acuity of 2.0 and chief complaint of Syncope indicate high urgency."",
+    ""P000083"": ""Triage acuity of 3.0, unstable vital signs (first_sbp=198.0), and chief complaint of Dyspnea indicate moderate to high urgency."",
+    ""P000212"": ""Triage acuity of 3.0 indicates moderate urgency."",
+    ""P000027"": ""Triage acuity of 3.0 and chief complaint of Hypotension indicate moderate urgency."",
+    ""P000061"": ""Chief complaint of SOB and unstable vital signs (first_sbp=146.0) indicate moderate urgency."",
+    ""P000176"": ""Triage acuity of 3.0, stable vital signs, and chief complaint of Toe pain indicate low to moderate urgency."",
+    ""P000126"": ""Triage acuity of 2.0 and chief complaint of Chest pain indicate moderate urgency."",
+    ""P000162"": ""Triage acuity of 3.0 and chief complaint of R FOOT ULCER/CELLULITIS indicate moderate urgency."",
+    ""P000140"": ""Triage acuity of 3.0, stable vital signs, and chief complaint of Abd pain indicate low to moderate urgency."",
+    ""P000080"": ""Lowest triage acuity (4.0) indicates lowest priority.""
+  },
+  ""notes"": """"
+}"
+E00005,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:11.181331+00:00,1,4,"[""P000109"", ""P000202"", ""P000083"", ""P000140""]","[""P000109"", ""P000202"", ""P000083"", ""P000140"", ""P000124"", ""P000212"", ""P000027"", ""P000061"", ""P000176"", ""P000126"", ""P000162"", ""P000080""]","{
+  ""episode_id"": ""E00005"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000109"",
+    ""P000202"",
+    ""P000083"",
+    ""P000140""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000109"",
+    ""P000202"",
+    ""P000083"",
+    ""P000140"",
+    ""P000124"",
+    ""P000212"",
+    ""P000027"",
+    ""P000061"",
+    ""P000176"",
+    ""P000126"",
+    ""P000162"",
+    ""P000080""
+  ],
+  ""rationales"": {
+    ""P000109"": ""Triage acuity of 2.0, chief complaint of SI, and caregiver present."",
+    ""P000202"": ""Triage acuity of 2.0, chief complaint of Syncope, and unstable housing stability proxy."",
+    ""P000083"": ""Triage acuity of 3.0, chief complaint of Dyspnea, and unstable housing stability proxy."",
+    ""P000140"": ""Triage acuity of 3.0, chief complaint of Abd pain, Right sided abdominal pain, and caregiver present.""
+  },
+  ""notes"": """"
+}"
+E00006,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:13.502922+00:00,1,4,"[""P000038"", ""P000165"", ""P000196"", ""P000206""]","[""P000038"", ""P000165"", ""P000196"", ""P000206"", ""P000147"", ""P000121"", ""P000141"", ""P000060"", ""P000100"", ""P000024"", ""P000008"", ""P000180""]","{
+  ""episode_id"": ""E00006"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000206""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000206"",
+    ""P000147"",
+    ""P000121"",
+    ""P000141"",
+    ""P000060"",
+    ""P000100"",
+    ""P000024"",
+    ""P000008"",
+    ""P000180""
+  ],
+  ""rationales"": {
+    ""P000038"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000165"": ""Triage acuity of 2.0 and chief complaint of L Leg pain, s/p Fall indicate moderate urgency."",
+    ""P000196"": ""Triage acuity of 2.0 and chief complaint of Fatigue, s/p Fall indicate moderate urgency."",
+    ""P000206"": ""Triage acuity of 2.0 and chief complaint of Dyspnea, Transfer indicate moderate urgency.""
+  },
+  ""notes"": """"
+}"
+E00006,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:15.655249+00:00,1,4,"[""P000038"", ""P000165"", ""P000196"", ""P000121""]","[""P000038"", ""P000165"", ""P000196"", ""P000121"", ""P000147"", ""P000206"", ""P000141"", ""P000100"", ""P000024"", ""P000008"", ""P000180"", ""P000060""]","{
+  ""episode_id"": ""E00006"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000121""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000121"",
+    ""P000147"",
+    ""P000206"",
+    ""P000141"",
+    ""P000100"",
+    ""P000024"",
+    ""P000008"",
+    ""P000180"",
+    ""P000060""
+  ],
+  ""rationales"": {
+    ""P000038"": ""Hypotension (SBP 70) with stable housing."",
+    ""P000165"": ""L Leg pain, s/p Fall; unstable housing."",
+    ""P000196"": ""Fatigue, s/p Fall; unstable housing and caregiver present."",
+    ""P000121"": ""BRBPR; unstable housing.""
+  },
+  ""notes"": """"
+}"
+E00006,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:59:17.853779+00:00,1,4,"[""P000038"", ""P000165"", ""P000196"", ""P000206""]","[""P000038"", ""P000165"", ""P000196"", ""P000206"", ""P000147"", ""P000121"", ""P000141"", ""P000060"", ""P000100"", ""P000024"", ""P000008"", ""P000180""]","{
+  ""episode_id"": ""E00006"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000206""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000206"",
+    ""P000147"",
+    ""P000121"",
+    ""P000141"",
+    ""P000060"",
+    ""P000100"",
+    ""P000024"",
+    ""P000008"",
+    ""P000180""
+  ],
+  ""rationales"": {
+    ""P000038"": ""Hypotension (triage_acuity=1.0)"",
+    ""P000165"": ""L Leg pain, s/p Fall (triage_acuity=2.0)"",
+    ""P000196"": ""Fatigue, s/p Fall (triage_acuity=2.0) and unstable housing"",
+    ""P000206"": ""Dyspnea, Transfer (triage_acuity=2.0)""
+  },
+  ""notes"": """"
+}"
+E00006,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:20.093627+00:00,1,4,"[""P000038"", ""P000165"", ""P000196"", ""P000121""]","[""P000038"", ""P000165"", ""P000196"", ""P000121"", ""P000147"", ""P000206"", ""P000141"", ""P000100"", ""P000024"", ""P000008"", ""P000180"", ""P000060""]","{
+  ""episode_id"": ""E00006"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000121""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000038"",
+    ""P000165"",
+    ""P000196"",
+    ""P000121"",
+    ""P000147"",
+    ""P000206"",
+    ""P000141"",
+    ""P000100"",
+    ""P000024"",
+    ""P000008"",
+    ""P000180"",
+    ""P000060""
+  ],
+  ""rationales"": {
+    ""P000038"": ""Hypotension (SBP=70.0)"",
+    ""P000165"": ""L Leg pain, s/p Fall (high risk of further injury)"",
+    ""P000196"": ""Fatigue, s/p Fall (high risk of further injury and potential for psychiatric stabilization)"",
+    ""P000121"": ""BRBPR (high risk of acute medical danger)""
+  },
+  ""notes"": """"
+}"
+E00007,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:22.409872+00:00,1,4,"[""P000101"", ""P000139"", ""P000068"", ""P000005""]","[""P000101"", ""P000139"", ""P000068"", ""P000005"", ""P000015"", ""P000029"", ""P000203"", ""P000156"", ""P000075"", ""P000014"", ""P000150"", ""P000098""]","{
+  ""episode_id"": ""E00007"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005"",
+    ""P000015"",
+    ""P000029"",
+    ""P000203"",
+    ""P000156"",
+    ""P000075"",
+    ""P000014"",
+    ""P000150"",
+    ""P000098""
+  ],
+  ""rationales"": {
+    ""P000101"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000139"": ""Triage acuity of 2.0 and chief complaint of Abd pain, N/V indicate moderate urgency."",
+    ""P000068"": ""Triage acuity of 2.0 and chief complaints of Anemia, Neutropenia, Transfer indicate moderate urgency."",
+    ""P000005"": ""Triage acuity of 2.0 and chief complaint of PE indicate moderate urgency.""
+  },
+  ""notes"": """"
+}"
+E00007,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:26.047847+00:00,1,4,"[""P000101"", ""P000139"", ""P000068"", ""P000005""]","[""P000101"", ""P000139"", ""P000068"", ""P000005"", ""P000075"", ""P000015"", ""P000029"", ""P000203"", ""P000156"", ""P000014"", ""P000150"", ""P000098""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00007"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005"",
+    ""P000075"",
+    ""P000015"",
+    ""P000029"",
+    ""P000203"",
+    ""P000156"",
+    ""P000014"",
+    ""P000150"",
+    ""P000098""
+  ],
+  ""rationales"": {
+    ""P000101"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000139"": ""Triage acuity of 2.0 and chief complaint of Abd pain, N/V indicate moderate urgency."",
+    ""P000068"": ""Triage acuity of 2.0, chief complaints of Anemia, Neutropenia, Transfer, and unstable housing stability proxy indicate moderate urgency."",
+    ""P000005"": ""Triage acuity of 2.0 and chief complaint of PE indicate moderate urgency."",
+    ""P000075"": ""Triage acuity of 2.0 and chief complaint of ELEVATED INR indicate moderate urgency."",
+    ""P000015"": ""Triage acuity of 3.0 and chief complaints of Dehydration, Nausea, Rash indicate lower urgency."",
+    ""P000029"": ""Triage acuity of 3.0 and chief complaint of Dyspnea indicate lower urgency."",
+    ""P000203"": ""Triage acuity of 2.0 and chief complaints of Abnormal labs, Weakness indicate moderate urgency."",
+    ""P000156"": ""Triage acuity of 2.0 and chief complaints of Abnormal labs, Hyperglycemia indicate moderate urgency."",
+    ""P000014"": ""Triage acuity of 3.0 and chief complaint of Abnormal labs indicate lower urgency."",
+    ""P000150"": ""Missing triage acuity value indicates unknown priority."",
+    ""P000098"": ""Missing triage acuity value indicates unknown priority.""
+  },
+  ""notes"": """"
+}
+```
+
+Note that patients P000150 and P000098 have missing triage acuity values, indicating unknown priority. They are ranked at the end of the list due to their unknown priority."
+E00007,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:59:28.398946+00:00,1,4,"[""P000101"", ""P000139"", ""P000068"", ""P000005""]","[""P000101"", ""P000139"", ""P000068"", ""P000005"", ""P000015"", ""P000029"", ""P000203"", ""P000150"", ""P000098"", ""P000156"", ""P000075"", ""P000014""]","{
+  ""episode_id"": ""E00007"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005"",
+    ""P000015"",
+    ""P000029"",
+    ""P000203"",
+    ""P000150"",
+    ""P000098"",
+    ""P000156"",
+    ""P000075"",
+    ""P000014""
+  ],
+  ""rationales"": {
+    ""P000101"": ""Transfer, PE with high triage acuity (1.0)"",
+    ""P000139"": ""Abd pain, N/V with moderate triage acuity (2.0) and unstable housing stability proxy"",
+    ""P000068"": ""Anemia, Neutropenia, Transfer with moderate triage acuity (2.0) and unstable housing stability proxy"",
+    ""P000005"": ""PE with moderate triage acuity (2.0) and stable housing stability proxy""
+  },
+  ""notes"": """"
+}"
+E00007,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:30.742417+00:00,1,4,"[""P000101"", ""P000139"", ""P000068"", ""P000005""]","[""P000101"", ""P000139"", ""P000068"", ""P000005"", ""P000075"", ""P000015"", ""P000029"", ""P000203"", ""P000156"", ""P000014"", ""P000150"", ""P000098""]","{
+  ""episode_id"": ""E00007"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000101"",
+    ""P000139"",
+    ""P000068"",
+    ""P000005"",
+    ""P000075"",
+    ""P000015"",
+    ""P000029"",
+    ""P000203"",
+    ""P000156"",
+    ""P000014"",
+    ""P000150"",
+    ""P000098""
+  ],
+  ""rationales"": {
+    ""P000101"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000139"": ""Triage acuity of 2.0 and chief complaint of Abd pain, N/V indicate need for admission."",
+    ""P000068"": ""Triage acuity of 2.0 and chief complaints of Anemia, Neutropenia, Transfer indicate need for admission."",
+    ""P000005"": ""Triage acuity of 2.0 and chief complaint of PE indicate need for admission.""
+  },
+  ""notes"": """"
+}"
+E00008,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:33.000399+00:00,1,4,"[""P000028"", ""P000001"", ""P000208"", ""P000026""]","[""P000028"", ""P000001"", ""P000208"", ""P000026"", ""P000073"", ""P000178"", ""P000172"", ""P000016"", ""P000093"", ""P000112"", ""P000146"", ""P000055""]","{
+  ""episode_id"": ""E00008"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000028"",
+    ""P000001"",
+    ""P000208"",
+    ""P000026""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000028"",
+    ""P000001"",
+    ""P000208"",
+    ""P000026"",
+    ""P000073"",
+    ""P000178"",
+    ""P000172"",
+    ""P000016"",
+    ""P000093"",
+    ""P000112"",
+    ""P000146"",
+    ""P000055""
+  ],
+  ""rationales"": {
+    ""P000028"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000001"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000208"": ""Triage acuity of 2.0 and chief complaint of Hematemesis indicate moderate urgency."",
+    ""P000026"": ""Triage acuity of 2.0 and chief complaint of L Leg DVT indicate moderate urgency.""
+  },
+  ""notes"": """"
+}"
+E00008,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:35.861291+00:00,1,4,"[""P000028"", ""P000073"", ""P000178"", ""P000208""]","[""P000028"", ""P000073"", ""P000178"", ""P000208"", ""P000026"", ""P000172"", ""P000001"", ""P000016"", ""P000055"", ""P000093"", ""P000112"", ""P000146""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00008"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000028"",
+    ""P000073"",
+    ""P000178"",
+    ""P000208""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000028"",
+    ""P000073"",
+    ""P000178"",
+    ""P000208"",
+    ""P000026"",
+    ""P000172"",
+    ""P000001"",
+    ""P000016"",
+    ""P000055"",
+    ""P000093"",
+    ""P000112"",
+    ""P000146""
+  ],
+  ""rationales"": {
+    ""P000028"": ""Hypotension, unstable housing stability proxy"",
+    ""P000073"": ""Tachycardia, hypoxia, stable but no caregiver present"",
+    ""P000178"": ""Epigastric pain, high blood pressure, stable but no caregiver present"",
+    ""P000208"": ""Hematemesis, unstable vital signs""
+  },
+  ""notes"": """"
+}
+```
+
+I selected the patients based on their triage acuity and explicit evidence of instability or risk. I prioritized P000028 due to hypotension and unstable housing stability proxy. Next was P000073 with tachycardia and hypoxia, but stable vital signs. Then came P000178 with epigastric pain and high blood pressure, but no caregiver present. Finally, I selected P000208 due to hematemesis and unstable vital signs.
+
+Note that I did not consider socioeconomic factors as primary reasons for admission unless they were explicitly relevant to the patient's condition."
+E00008,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:59:38.495601+00:00,1,4,"[""P000028"", ""P000073"", ""P000178"", ""P000208""]","[""P000028"", ""P000073"", ""P000178"", ""P000208"", ""P000026"", ""P000172"", ""P000001"", ""P000016"", ""P000055"", ""P000093"", ""P000112"", ""P000146""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00008"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [""P000028"", ""P000073"", ""P000178"", ""P000208""],
+  ""ranked_patient_ids"": [
+    ""P000028"",
+    ""P000073"",
+    ""P000178"",
+    ""P000208"",
+    ""P000026"",
+    ""P000172"",
+    ""P000001"",
+    ""P000016"",
+    ""P000055"",
+    ""P000093"",
+    ""P000112"",
+    ""P000146""
+  ],
+  ""rationales"": {
+    ""P000028"": ""Triage acuity of 1.0, chief complaint of Hypotension, and caregiver present."",
+    ""P000073"": ""Triage acuity of 1.0, chief complaints of Tachycardia and Hypoxia."",
+    ""P000178"": ""Triage acuity of 2.0, chief complaint of Epigastric pain, and first sbp of 158."",
+    ""P000208"": ""Triage acuity of 2.0, chief complaint of Hematemesis, and worst sbp of 69.""
+  },
+  ""notes"": """"
+}
+```
+
+The selected patients for admission are P000028, P000073, P000178, and P000208. The rationales provided are based on the explicit evidence from the patient summaries, considering both clinical acuity and operational constraints."
+E00008,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:40.751482+00:00,1,4,"[""P000028"", ""P000073"", ""P000178"", ""P000208""]","[""P000028"", ""P000073"", ""P000178"", ""P000208"", ""P000026"", ""P000172"", ""P000001"", ""P000016"", ""P000055"", ""P000093"", ""P000112"", ""P000146""]","{
+  ""episode_id"": ""E00008"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000028"",
+    ""P000073"",
+    ""P000178"",
+    ""P000208""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000028"",
+    ""P000073"",
+    ""P000178"",
+    ""P000208"",
+    ""P000026"",
+    ""P000172"",
+    ""P000001"",
+    ""P000016"",
+    ""P000055"",
+    ""P000093"",
+    ""P000112"",
+    ""P000146""
+  ],
+  ""rationales"": {
+    ""P000028"": ""Hypotension, Abnormal labs, ETOH; high acuity (1.0)"",
+    ""P000073"": ""Tachycardia, Hypoxia; high acuity (1.0)"",
+    ""P000178"": ""Epigastric pain; moderate acuity (2.0)"",
+    ""P000208"": ""Hematemesis; moderate acuity (2.0)""
+  },
+  ""notes"": """"
+}"
+E00009,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:43.763887+00:00,1,4,"[""P000187"", ""P000182"", ""P000066"", ""P000129""]","[""P000187"", ""P000182"", ""P000066"", ""P000129"", ""P000125"", ""P000108"", ""P000051"", ""P000183"", ""P000171"", ""P000184"", ""P000065"", ""P000128""]","{
+  ""episode_id"": ""E00009"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129"",
+    ""P000125"",
+    ""P000108"",
+    ""P000051"",
+    ""P000183"",
+    ""P000171"",
+    ""P000184"",
+    ""P000065"",
+    ""P000128""
+  ],
+  ""rationales"": {
+    ""P000187"": ""Triage acuity=2.0, Chest pain, NSTEMI, Transfer"",
+    ""P000182"": ""Triage acuity=2.0, Transfer, CVA"",
+    ""P000066"": ""Triage acuity=2.0, Abnormal CT, LUQ abd pain"",
+    ""P000129"": ""Triage acuity=2.0, Dyspnea"",
+    ""P000125"": ""Triage acuity=3.0, R Leg pain, Weakness"",
+    ""P000108"": ""Missing values for vital signs"",
+    ""P000051"": ""Triage acuity=2.0, UNKNOWN-CC"",
+    ""P000183"": ""Triage acuity=3.0, Abd pain, Back pain"",
+    ""P000171"": ""Missing values for vital signs"",
+    ""P000184"": ""Triage acuity=2.0, Cough, Dyspnea"",
+    ""P000065"": ""Triage acuity=2.0, Weakness, Hypotension"",
+    ""P000128"": ""Triage acuity=2.0, Wound eval, Transfer""
+  },
+  ""notes"": """"
+}"
+E00009,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:46.797120+00:00,1,4,"[""P000187"", ""P000182"", ""P000066"", ""P000129""]","[""P000187"", ""P000182"", ""P000066"", ""P000129"", ""P000125"", ""P000183"", ""P000051"", ""P000184"", ""P000065"", ""P000128"", ""P000171"", ""P000108""]","{
+  ""episode_id"": ""E00009"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129"",
+    ""P000125"",
+    ""P000183"",
+    ""P000051"",
+    ""P000184"",
+    ""P000065"",
+    ""P000128"",
+    ""P000171"",
+    ""P000108""
+  ],
+  ""rationales"": {
+    ""P000187"": ""Chest pain, NSTEMI, Transfer with high wait time and unstable blood pressure."",
+    ""P000182"": ""Transfer, CVA with high wait time and unstable blood pressure."",
+    ""P000066"": ""Abnormal CT, LUQ abd pain with high wait time and unstable vital signs."",
+    ""P000129"": ""Dyspnea with caregiver present and stable housing stability."",
+    ""P000125"": ""R Leg pain, Weakness with unstable vital signs and lack of insurance coverage."",
+    ""P000183"": ""Abd pain, Back pain with unstable blood pressure and lack of insurance coverage."",
+    ""P000051"": ""UNKNOWN-CC with high wait time and unstable vital signs."",
+    ""P000184"": ""Cough, Dyspnea with stable housing stability but high wait time."",
+    ""P000065"": ""Weakness, Hypotension with unstable vital signs and lack of caregiver support."",
+    ""P000128"": ""Wound eval, Transfer with unstable blood pressure and unstable housing stability."",
+    ""P000171"": ""Psych eval with high wait time and missing vital signs."",
+    ""P000108"": ""SI with missing vital signs and stable housing stability.""
+  },
+  ""notes"": """"
+}"
+E00009,ollama,llama3.1:8b,revenue,ok,2026-04-24T00:59:49.843861+00:00,1,4,"[""P000187"", ""P000182"", ""P000066"", ""P000129""]","[""P000187"", ""P000182"", ""P000066"", ""P000129"", ""P000125"", ""P000183"", ""P000051"", ""P000184"", ""P000065"", ""P000128"", ""P000171"", ""P000108""]","{
+  ""episode_id"": ""E00009"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000187"",
+    ""P000182"",
+    ""P000066"",
+    ""P000129"",
+    ""P000125"",
+    ""P000183"",
+    ""P000051"",
+    ""P000184"",
+    ""P000065"",
+    ""P000128"",
+    ""P000171"",
+    ""P000108""
+  ],
+  ""rationales"": {
+    ""P000187"": ""Chest pain, NSTEMI, Transfer with high wait time and unstable blood pressure."",
+    ""P000182"": ""Transfer, CVA with high wait time and unstable blood pressure."",
+    ""P000066"": ""Abnormal CT, LUQ abd pain with high wait time and unstable vital signs."",
+    ""P000129"": ""Dyspnea with high wait time and unstable blood pressure."",
+    ""P000125"": ""R Leg pain, Weakness with stable but high blood pressure and unstable heart rate."",
+    ""P000183"": ""Abd pain, Back pain with unstable blood pressure and no wait time."",
+    ""P000051"": ""UNKNOWN-CC with high blood pressure and long wait time."",
+    ""P000184"": ""Cough, Dyspnea with high wait time and unstable blood pressure."",
+    ""P000065"": ""Weakness, Hypotension with unstable vital signs and long wait time."",
+    ""P000128"": ""Wound eval, Transfer with unstable blood pressure and unstable housing stability."",
+    ""P000171"": ""Psych eval with no vital signs available and stable housing stability."",
+    ""P000108"": ""SI with missing vital signs and stable housing stability.""
+  },
+  ""notes"": """"
+}"
+E00009,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T00:59:52.236763+00:00,1,4,"[""P000125"", ""P000183"", ""P000051"", ""P000065""]","[""P000125"", ""P000183"", ""P000051"", ""P000065"", ""P000187"", ""P000182"", ""P000066"", ""P000129"", ""P000108"", ""P000184"", ""P000128"", ""P000171""]","{
+  ""episode_id"": ""E00009"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000125"", 
+    ""P000183"", 
+    ""P000051"", 
+    ""P000065""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000125"", 
+    ""P000183"", 
+    ""P000051"", 
+    ""P000065"", 
+    ""P000187"", 
+    ""P000182"", 
+    ""P000066"", 
+    ""P000129"", 
+    ""P000108"", 
+    ""P000184"", 
+    ""P000128"", 
+    ""P000171""
+  ],
+  ""rationales"": {
+    ""P000125"": ""Triage acuity of 3.0 indicates high urgency."",
+    ""P000183"": ""Triage acuity of 3.0 and unstable housing stability proxy indicate high priority for admission."",
+    ""P000051"": ""Triage acuity of 2.0, caregiver present, and stable housing stability proxy suggest need for medical attention."",
+    ""P000065"": ""Triage acuity of 2.0, hypotension, and stable housing stability proxy indicate potential instability requiring admission.""
+  },
+  ""notes"": """"
+}"
+E00010,ollama,llama3.1:8b,none,ok,2026-04-24T00:59:55.417594+00:00,1,4,"[""P000023"", ""P000220"", ""P000017"", ""P000197""]","[""P000023"", ""P000220"", ""P000017"", ""P000197"", ""P000088"", ""P000115"", ""P000199"", ""P000089"", ""P000094"", ""P000175"", ""P000158"", ""P000205""]","{
+  ""episode_id"": ""E00010"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197"",
+    ""P000088"",
+    ""P000115"",
+    ""P000199"",
+    ""P000089"",
+    ""P000094"",
+    ""P000175"",
+    ""P000158"",
+    ""P000205""
+  ],
+  ""rationales"": {
+    ""P000023"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000220"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000017"": ""Triage acuity of 2.0 and chief complaint of DKA, Transfer indicate high priority."",
+    ""P000197"": ""Triage acuity of 2.0 and chief complaint of Chest pain, Transfer indicate high priority."",
+    ""P000088"": ""Triage acuity of 2.0 and vital signs indicate moderate urgency."",
+    ""P000115"": ""Triage acuity of 2.0 and vital signs indicate moderate urgency."",
+    ""P000199"": ""Triage acuity of 2.0 and vital signs indicate moderate urgency."",
+    ""P000089"": ""Triage acuity of 3.0, but caregiver present indicates some stability."",
+    ""P000094"": ""Triage acuity of 3.0 and vital signs indicate low priority."",
+    ""P000175"": ""Triage acuity of 3.0 and vital signs indicate low priority."",
+    ""P000158"": ""Triage acuity of 3.0, but chief complaint of Foot laceration indicates some urgency."",
+    ""P000205"": ""Triage acuity of 1.0, but caregiver present indicates some stability.""
+  },
+  ""notes"": """"
+}"
+E00010,ollama,llama3.1:8b,social_worker,ok,2026-04-24T00:59:58.523131+00:00,1,4,"[""P000023"", ""P000220"", ""P000017"", ""P000197""]","[""P000023"", ""P000220"", ""P000017"", ""P000197"", ""P000088"", ""P000115"", ""P000199"", ""P000089"", ""P000094"", ""P000175"", ""P000158"", ""P000205""]","{
+  ""episode_id"": ""E00010"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197"",
+    ""P000088"",
+    ""P000115"",
+    ""P000199"",
+    ""P000089"",
+    ""P000094"",
+    ""P000175"",
+    ""P000158"",
+    ""P000205""
+  ],
+  ""rationales"": {
+    ""P000023"": ""Cardiac arrest, high triage acuity (1.0)"",
+    ""P000220"": ""Cardiac arrest, high triage acuity (1.0) and caregiver present"",
+    ""P000017"": ""DKA, Transfer, high triage acuity (2.0) and no caregiver present"",
+    ""P000197"": ""Chest pain, Transfer, high triage acuity (2.0) and no caregiver present"",
+    ""P000088"": ""Leg pain, Wound eval, high vital signs and stable housing"",
+    ""P000115"": ""T-SPINE FX DISPLACEMENT, high vital signs and stable housing"",
+    ""P000199"": ""Lower back pain, high vital signs and stable housing"",
+    ""P000089"": ""HYPERTENSION, caregiver present but high triage acuity (3.0)"",
+    ""P000094"": ""B Leg swelling, high vital signs and private coverage"",
+    ""P000175"": ""L Leg pain, Weakness, high vital signs and public coverage"",
+    ""P000158"": ""Foot laceration, stable housing but long wait time"",
+    ""P000205"": ""Dyspnea, Hypoxia, caregiver present but low oxygen levels""
+  },
+  ""notes"": """"
+}"
+E00010,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:01.801932+00:00,1,4,"[""P000023"", ""P000220"", ""P000017"", ""P000197""]","[""P000023"", ""P000220"", ""P000017"", ""P000197"", ""P000088"", ""P000115"", ""P000199"", ""P000089"", ""P000094"", ""P000175"", ""P000158"", ""P000205""]","{
+  ""episode_id"": ""E00010"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000023"",
+    ""P000220"",
+    ""P000017"",
+    ""P000197"",
+    ""P000088"",
+    ""P000115"",
+    ""P000199"",
+    ""P000089"",
+    ""P000094"",
+    ""P000175"",
+    ""P000158"",
+    ""P000205""
+  ],
+  ""rationales"": {
+    ""P000023"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000220"": ""Triage acuity of 1.0 and cardiac arrest indicate high priority."",
+    ""P000017"": ""DKA, Transfer with triage acuity of 2.0 requires urgent attention."",
+    ""P000197"": ""Chest pain, Transfer with triage acuity of 2.0 indicates need for admission."",
+    ""P000088"": ""Leg pain, Wound eval with triage acuity of 2.0 and stable vital signs."",
+    ""P000115"": ""T-SPINE FX DISPLACEMENT with triage acuity of 2.0 requires urgent evaluation."",
+    ""P000199"": ""Lower back pain with triage acuity of 2.0 and stable vital signs."",
+    ""P000089"": ""HYPERTENSION with triage acuity of 3.0 and caregiver present."",
+    ""P000094"": ""B Leg swelling with triage acuity of 3.0 and stable vital signs."",
+    ""P000175"": ""L Leg pain, Weakness with triage acuity of 3.0 and caregiver present."",
+    ""P000158"": ""Foot laceration with triage acuity of 3.0 and long wait time."",
+    ""P000205"": ""Dyspnea, Hypoxia with triage acuity of 1.0 but stable vital signs.""
+  },
+  ""notes"": """"
+}"
+E00010,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:04.014835+00:00,1,4,"[""P000023"", ""P000088"", ""P000017"", ""P000197""]","[""P000023"", ""P000088"", ""P000017"", ""P000197"", ""P000199"", ""P000115"", ""P000220"", ""P000089"", ""P000094"", ""P000175"", ""P000158"", ""P000205""]","{
+  ""episode_id"": ""E00010"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000023"",
+    ""P000088"",
+    ""P000017"",
+    ""P000197""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000023"",
+    ""P000088"",
+    ""P000017"",
+    ""P000197"",
+    ""P000199"",
+    ""P000115"",
+    ""P000220"",
+    ""P000089"",
+    ""P000094"",
+    ""P000175"",
+    ""P000158"",
+    ""P000205""
+  ],
+  ""rationales"": {
+    ""P000023"": ""Cardiac arrest, high triage acuity (1.0)"",
+    ""P000088"": ""Leg pain, Wound eval, stable vitals, low wait time"",
+    ""P000017"": ""DKA, Transfer, stable vitals, low wait time"",
+    ""P000197"": ""Chest pain, Transfer, stable vitals, high heart rate""
+  },
+  ""notes"": """"
+}"
+E00011,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:07.197542+00:00,1,4,"[""P000211"", ""P000207"", ""P000103"", ""P000041""]","[""P000211"", ""P000207"", ""P000103"", ""P000041"", ""P000154"", ""P000167"", ""P000079"", ""P000048"", ""P000130"", ""P000153"", ""P000074"", ""P000011""]","{
+  ""episode_id"": ""E00011"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041"",
+    ""P000154"",
+    ""P000167"",
+    ""P000079"",
+    ""P000048"",
+    ""P000130"",
+    ""P000153"",
+    ""P000074"",
+    ""P000011""
+  ],
+  ""rationales"": {
+    ""P000211"": ""Triage acuity of 2.0 indicates high urgency due to chest pain."",
+    ""P000207"": ""Triage acuity of 2.0 and dyspnea indicate high urgency."",
+    ""P000103"": ""Triage acuity of 2.0 and hypoglycemia indicate high urgency."",
+    ""P000041"": ""Triage acuity of 2.0 and hypotension indicate high urgency."",
+    ""P000154"": ""Triage acuity of 2.0 indicates moderate urgency due to abnormal labs."",
+    ""P000167"": ""Triage acuity of 2.0 and chest pain indicate moderate urgency."",
+    ""P000079"": ""Triage acuity of 2.0 indicates moderate urgency due to dehydration and fatigue."",
+    ""P000048"": ""Triage acuity of 3.0 indicates low urgency due to back pain."",
+    ""P000130"": ""Triage acuity of 3.0 and dislodged abdominal tube indicate low urgency."",
+    ""P000153"": ""Triage acuity of 3.0 indicates low urgency due to foot pain."",
+    ""P000074"": ""Missing vital signs indicate unknown urgency."",
+    ""P000011"": ""Triage acuity of 3.0 and PICC line infection indicate low urgency.""
+  },
+  ""notes"": """"
+}"
+E00011,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:00:10.812222+00:00,1,4,"[""P000211"", ""P000207"", ""P000103"", ""P000041""]","[""P000211"", ""P000207"", ""P000103"", ""P000041"", ""P000154"", ""P000167"", ""P000079"", ""P000048"", ""P000153"", ""P000130"", ""P000074"", ""P000011""]","{
+  ""episode_id"": ""E00011"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041"",
+    ""P000154"",
+    ""P000167"",
+    ""P000079"",
+    ""P000048"",
+    ""P000153"",
+    ""P000130"",
+    ""P000074"",
+    ""P000011""
+  ],
+  ""rationales"": {
+    ""P000211"": ""Triage acuity of 2.0, chest pain, and unstable housing stability proxy."",
+    ""P000207"": ""Triage acuity of 2.0, dyspnea, caregiver present, and stable housing stability proxy."",
+    ""P000103"": ""Triage acuity of 2.0, hypoglycemia, no caregiver present, and stable housing stability proxy."",
+    ""P000041"": ""Triage acuity of 2.0, hypotension, caregiver present, and stable housing stability proxy."",
+    ""P000154"": ""Triage acuity of 2.0, abnormal labs, private coverage proxy, and stable housing stability proxy."",
+    ""P000167"": ""Triage acuity of 2.0, chest pain, no caregiver present, and stable housing stability proxy."",
+    ""P000079"": ""Triage acuity of 2.0, dehydration and fatigue, no caregiver present, and stable housing stability proxy."",
+    ""P000048"": ""Triage acuity of 3.0, back pain, female gender, and Hispanic/Latino ethnicity."",
+    ""P000153"": ""Triage acuity of 3.0, foot pain, male gender, private coverage proxy, and stable housing stability proxy."",
+    ""P000130"": ""Triage acuity of 3.0, dislodged abdominal tube, no caregiver present, and stable housing stability proxy."",
+    ""P000074"": ""Triage acuity of 2.0, altered mental status, no caregiver present, uninsured coverage proxy, and stable housing stability proxy."",
+    ""P000011"": ""Triage acuity of 3.0, PICC line infection, female gender, uninsured coverage proxy, and stable housing stability proxy.""
+  },
+  ""notes"": """"
+}"
+E00011,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:14.180794+00:00,1,4,"[""P000211"", ""P000207"", ""P000103"", ""P000041""]","[""P000211"", ""P000207"", ""P000103"", ""P000041"", ""P000154"", ""P000167"", ""P000079"", ""P000048"", ""P000153"", ""P000130"", ""P000074"", ""P000011""]","{
+  ""episode_id"": ""E00011"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041"",
+    ""P000154"",
+    ""P000167"",
+    ""P000079"",
+    ""P000048"",
+    ""P000153"",
+    ""P000130"",
+    ""P000074"",
+    ""P000011""
+  ],
+  ""rationales"": {
+    ""P000211"": ""Triage acuity of 2.0, chest pain, and unstable housing stability proxy."",
+    ""P000207"": ""Triage acuity of 2.0, dyspnea, and stable housing stability proxy."",
+    ""P000103"": ""Triage acuity of 2.0, hypoglycemia, and stable housing stability proxy."",
+    ""P000041"": ""Triage acuity of 2.0, hypotension, and stable housing stability proxy."",
+    ""P000154"": ""Triage acuity of 2.0, abnormal labs, and stable housing stability proxy."",
+    ""P000167"": ""Triage acuity of 2.0, chest pain, and stable housing stability proxy."",
+    ""P000079"": ""Triage acuity of 2.0, dehydration and fatigue, and stable housing stability proxy."",
+    ""P000048"": ""Triage acuity of 3.0, back pain, and stable housing stability proxy."",
+    ""P000153"": ""Triage acuity of 3.0, foot pain, and stable housing stability proxy."",
+    ""P000130"": ""Triage acuity of 3.0, dislodged abdominal tube, and stable housing stability proxy."",
+    ""P000074"": ""Triage acuity of 2.0, altered mental status, but missing vital signs."",
+    ""P000011"": ""Triage acuity of 3.0, PICC line infection, and stable housing stability proxy.""
+  },
+  ""notes"": """"
+}"
+E00011,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:17.508525+00:00,1,4,"[""P000211"", ""P000207"", ""P000103"", ""P000041""]","[""P000211"", ""P000207"", ""P000103"", ""P000041"", ""P000154"", ""P000167"", ""P000079"", ""P000048"", ""P000153"", ""P000130"", ""P000074"", ""P000011""]","{
+  ""episode_id"": ""E00011"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000211"",
+    ""P000207"",
+    ""P000103"",
+    ""P000041"",
+    ""P000154"",
+    ""P000167"",
+    ""P000079"",
+    ""P000048"",
+    ""P000153"",
+    ""P000130"",
+    ""P000074"",
+    ""P000011""
+  ],
+  ""rationales"": {
+    ""P000211"": ""Triage acuity of 2.0, chest pain, and unstable housing stability proxy."",
+    ""P000207"": ""Triage acuity of 2.0, dyspnea, and stable housing stability proxy."",
+    ""P000103"": ""Triage acuity of 2.0, hypoglycemia, and stable housing stability proxy."",
+    ""P000041"": ""Triage acuity of 2.0, hypotension, and stable housing stability proxy."",
+    ""P000154"": ""Triage acuity of 2.0, abnormal labs, and stable housing stability proxy."",
+    ""P000167"": ""Triage acuity of 2.0, chest pain, and stable housing stability proxy."",
+    ""P000079"": ""Triage acuity of 2.0, dehydration and fatigue, and stable housing stability proxy."",
+    ""P000048"": ""Triage acuity of 3.0, back pain, and stable housing stability proxy."",
+    ""P000153"": ""Triage acuity of 3.0, foot pain, and stable housing stability proxy."",
+    ""P000130"": ""Triage acuity of 3.0, dislodged abdominal tube, and stable housing stability proxy."",
+    ""P000074"": ""Triage acuity of 2.0, altered mental status, but missing vital signs."",
+    ""P000011"": ""Triage acuity of 3.0, PICC line infection, and stable housing stability proxy.""
+  },
+  ""notes"": """"
+}"
+E00012,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:19.764823+00:00,1,4,"[""P000138"", ""P000137"", ""P000164"", ""P000003""]","[""P000138"", ""P000137"", ""P000164"", ""P000003"", ""P000110"", ""P000194"", ""P000214"", ""P000148"", ""P000219"", ""P000040"", ""P000190"", ""P000117""]","{
+  ""episode_id"": ""E00012"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000164"",
+    ""P000003""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000164"",
+    ""P000003"",
+    ""P000110"",
+    ""P000194"",
+    ""P000214"",
+    ""P000148"",
+    ""P000219"",
+    ""P000040"",
+    ""P000190"",
+    ""P000117""
+  ],
+  ""rationales"": {
+    ""P000138"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000137"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000164"": ""Triage acuity of 1.0 and chief complaint of Tachycardia indicate high urgency."",
+    ""P000003"": ""Triage acuity of 2.0 and chief complaint of Tinnitus indicate moderate urgency.""
+  },
+  ""notes"": """"
+}"
+E00012,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:00:21.904041+00:00,1,4,"[""P000138"", ""P000137"", ""P000110"", ""P000194""]","[""P000138"", ""P000137"", ""P000110"", ""P000194"", ""P000219"", ""P000164"", ""P000190"", ""P000040"", ""P000003"", ""P000117"", ""P000214"", ""P000148""]","{
+  ""episode_id"": ""E00012"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000110"",
+    ""P000194""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000110"",
+    ""P000194"",
+    ""P000219"",
+    ""P000164"",
+    ""P000190"",
+    ""P000040"",
+    ""P000003"",
+    ""P000117"",
+    ""P000214"",
+    ""P000148""
+  ],
+  ""rationales"": {
+    ""P000138"": ""ICH with high blood pressure and unstable vital signs"",
+    ""P000137"": ""Altered mental status with unknown arrival transport and wait time"",
+    ""P000110"": ""SI with high heart rate and blood pressure, but stable oxygen levels"",
+    ""P000194"": ""Chest pain with high blood pressure and recent decrease in heart rate""
+  },
+  ""notes"": """"
+}"
+E00012,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:24.174051+00:00,1,4,"[""P000138"", ""P000137"", ""P000164"", ""P000003""]","[""P000138"", ""P000137"", ""P000164"", ""P000003"", ""P000110"", ""P000194"", ""P000214"", ""P000148"", ""P000219"", ""P000040"", ""P000190"", ""P000117""]","{
+  ""episode_id"": ""E00012"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000164"",
+    ""P000003""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000164"",
+    ""P000003"",
+    ""P000110"",
+    ""P000194"",
+    ""P000214"",
+    ""P000148"",
+    ""P000219"",
+    ""P000040"",
+    ""P000190"",
+    ""P000117""
+  ],
+  ""rationales"": {
+    ""P000138"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000137"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000164"": ""Triage acuity of 1.0 and unstable housing stability proxy indicate high priority."",
+    ""P000003"": ""Triage acuity of 2.0, unstable housing stability proxy, and private coverage proxy contribute to high priority.""
+  },
+  ""notes"": """"
+}"
+E00012,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:26.356149+00:00,1,4,"[""P000138"", ""P000137"", ""P000110"", ""P000194""]","[""P000138"", ""P000137"", ""P000110"", ""P000194"", ""P000219"", ""P000164"", ""P000190"", ""P000040"", ""P000003"", ""P000117"", ""P000214"", ""P000148""]","{
+  ""episode_id"": ""E00012"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000110"",
+    ""P000194""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000138"",
+    ""P000137"",
+    ""P000110"",
+    ""P000194"",
+    ""P000219"",
+    ""P000164"",
+    ""P000190"",
+    ""P000040"",
+    ""P000003"",
+    ""P000117"",
+    ""P000214"",
+    ""P000148""
+  ],
+  ""rationales"": {
+    ""P000138"": ""ICH with high blood pressure and unstable vital signs"",
+    ""P000137"": ""Altered mental status with unknown arrival transport and wait time"",
+    ""P000110"": ""SI with high heart rate and blood pressure, but stable oxygen levels"",
+    ""P000194"": ""Chest pain with high blood pressure and recent decrease in heart rate""
+  },
+  ""notes"": """"
+}"
+E00013,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:28.661384+00:00,1,4,"[""P000097"", ""P000113"", ""P000169"", ""P000021""]","[""P000097"", ""P000113"", ""P000169"", ""P000021"", ""P000056"", ""P000168"", ""P000006"", ""P000090"", ""P000070"", ""P000200"", ""P000163"", ""P000052""]","{
+  ""episode_id"": ""E00013"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021"",
+    ""P000056"",
+    ""P000168"",
+    ""P000006"",
+    ""P000090"",
+    ""P000070"",
+    ""P000200"",
+    ""P000163"",
+    ""P000052""
+  ],
+  ""rationales"": {
+    ""P000097"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000113"": ""Triage acuity of 2.0 and vital signs indicate moderate to severe respiratory distress."",
+    ""P000169"": ""Chief complaint of Altered mental status and triage acuity of 2.0 indicate psychiatric hold with altered mental status."",
+    ""P000021"": ""Chief complaint of Facial numbness and triage acuity of 2.0 indicate potential neurological issue.""
+  },
+  ""notes"": """"
+}"
+E00013,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:00:31.903379+00:00,1,4,"[""P000097"", ""P000113"", ""P000169"", ""P000021""]","[""P000097"", ""P000113"", ""P000169"", ""P000021"", ""P000056"", ""P000168"", ""P000006"", ""P000090"", ""P000070"", ""P000200"", ""P000163"", ""P000052""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00013"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021"",
+    ""P000056"",
+    ""P000168"",
+    ""P000006"",
+    ""P000090"",
+    ""P000070"",
+    ""P000200"",
+    ""P000163"",
+    ""P000052""
+  ],
+  ""rationales"": {
+    ""P000097"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000113"": ""Triage acuity of 2.0 and vital signs indicate moderate to severe respiratory distress."",
+    ""P000169"": ""Chief complaint of altered mental status and psychiatric hold indicates need for immediate attention."",
+    ""P000021"": ""Chief complaint of facial numbness and triage acuity of 2.0 suggest potential neurological issue.""
+  },
+  ""notes"": """"
+}
+```
+
+I prioritized patients based on their triage acuity, chief complaints, and vital signs. I considered the social worker's perspective by giving additional consideration to vulnerability, lack of support, and barriers to safe discharge when patients were clinically close. However, in this case, clear acute medical danger took precedence.
+
+The top 4 patients selected for admission are:
+
+1. P000097: Triage acuity of 1.0 indicates highest urgency.
+2. P000113: Triage acuity of 2.0 and vital signs indicate moderate to severe respiratory distress.
+3. P000169: Chief complaint of altered mental status and psychiatric hold indicates need for immediate attention.
+4. P000021: Chief complaint of facial numbness and triage acuity of 2.0 suggest potential neurological issue.
+
+These patients were selected based on explicit evidence from the patient summaries, without inventing instability, diagnoses, or trends."
+E00013,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:35.328399+00:00,1,4,"[""P000097"", ""P000113"", ""P000169"", ""P000021""]","[""P000097"", ""P000113"", ""P000169"", ""P000021"", ""P000056"", ""P000168"", ""P000006"", ""P000090"", ""P000070"", ""P000200"", ""P000163"", ""P000052""]","Here is the JSON output with the selected patients for admission:
+
+```
+{
+  ""episode_id"": ""E00013"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021"",
+    ""P000056"",
+    ""P000168"",
+    ""P000006"",
+    ""P000090"",
+    ""P000070"",
+    ""P000200"",
+    ""P000163"",
+    ""P000052""
+  ],
+  ""rationales"": {
+    ""P000097"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000113"": ""Triage acuity of 2.0 and vital signs indicate moderate to high risk."",
+    ""P000169"": ""Chief complaint of Altered mental status and triage acuity of 2.0 indicate need for admission."",
+    ""P000021"": ""Chief complaint of Facial numbness and triage acuity of 2.0 indicate need for admission.""
+  },
+  ""notes"": """"
+}
+```
+
+I selected the patients based on their triage acuity, chief complaints, and vital signs. Patients with lower triage acuity (i.e., higher urgency) were prioritized first. In cases where triage acuity was equal, I considered the chief complaint and vital signs to determine admission priority.
+
+Note that patient P000097 has a triage acuity of 1.0, which indicates the highest urgency. Therefore, it is ranked as the top priority for admission.
+
+Patient P000113 has a triage acuity of 2.0 and vital signs indicating moderate to high risk, making it the second priority for admission.
+
+Patients P000169 and P000021 have chief complaints that indicate a need for admission (Altered mental status and Facial numbness, respectively) and triage acuity of 2.0, making them the third and fourth priorities for admission.
+
+The remaining patients were ranked based on their triage acuity and chief complaints, with consideration given to institutional financial sustainability and resource use in cases where patients are clinically close."
+E00013,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:37.495270+00:00,1,4,"[""P000097"", ""P000113"", ""P000169"", ""P000021""]","[""P000097"", ""P000113"", ""P000169"", ""P000021"", ""P000056"", ""P000200"", ""P000070"", ""P000090"", ""P000168"", ""P000006"", ""P000163"", ""P000052""]","{
+  ""episode_id"": ""E00013"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000097"",
+    ""P000113"",
+    ""P000169"",
+    ""P000021"",
+    ""P000056"",
+    ""P000200"",
+    ""P000070"",
+    ""P000090"",
+    ""P000168"",
+    ""P000006"",
+    ""P000163"",
+    ""P000052""
+  ],
+  ""rationales"": {
+    ""P000097"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000113"": ""Triage acuity of 2.0 and vital signs indicate moderate urgency."",
+    ""P000169"": ""Chief complaint of Altered mental status requires psychiatric hold."",
+    ""P000021"": ""Chief complaint of Facial numbness may require further evaluation.""
+  },
+  ""notes"": """"
+}"
+E00014,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:39.639468+00:00,1,4,"[""P000217"", ""P000215"", ""P000013"", ""P000046""]","[""P000217"", ""P000215"", ""P000013"", ""P000046"", ""P000188"", ""P000064"", ""P000144"", ""P000149"", ""P000204"", ""P000049"", ""P000091"", ""P000044""]","{
+  ""episode_id"": ""E00014"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000013"",
+    ""P000046""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000013"",
+    ""P000046"",
+    ""P000188"",
+    ""P000064"",
+    ""P000144"",
+    ""P000149"",
+    ""P000204"",
+    ""P000049"",
+    ""P000091"",
+    ""P000044""
+  ],
+  ""rationales"": {
+    ""P000217"": ""Triage acuity of 1.0 indicates highest urgency."",
+    ""P000215"": ""HEAD BLEED is a critical condition requiring immediate attention."",
+    ""P000013"": ""Presyncope and weakness indicate potential cardiac instability."",
+    ""P000046"": ""Head injury with s/p Fall requires urgent medical evaluation.""
+  },
+  ""notes"": """"
+}"
+E00014,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:00:42.795121+00:00,1,4,"[""P000217"", ""P000215"", ""P000013"", ""P000046""]","[""P000217"", ""P000215"", ""P000013"", ""P000046"", ""P000188"", ""P000064"", ""P000144"", ""P000049"", ""P000091"", ""P000204"", ""P000149"", ""P000044""]","Here is the JSON output:
+
+```
+{
+  ""episode_id"": ""E00014"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [""P000217"", ""P000215"", ""P000013"", ""P000046""],
+  ""ranked_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000013"",
+    ""P000046"",
+    ""P000188"",
+    ""P000064"",
+    ""P000144"",
+    ""P000049"",
+    ""P000091"",
+    ""P000204"",
+    ""P000149"",
+    ""P000044""
+  ],
+  ""rationales"": {
+    ""P000217"": ""High triage acuity (1.0) and unstable vital signs."",
+    ""P000215"": ""Severe head bleed with high blood pressure and no caregiver present."",
+    ""P000013"": ""Presyncope, weakness, and unstable vital signs with no caregiver present."",
+    ""P000046"": ""Head injury with s/p fall and stable but concerning vital signs."",
+    ""P000188"": ""Weakness with high blood pressure and unstable vital signs."",
+    ""P000064"": ""Weakness and GI bleed with unstable vital signs and unstable housing stability."",
+    ""P000144"": ""Abdominal pain with high blood pressure and no caregiver present."",
+    ""P000049"": ""Hyperglycemia with stable but concerning vital signs and stable housing stability."",
+    ""P000091"": ""Left eye swelling and redness, but missing vital signs."",
+    ""P000204"": ""Dyspnea and abnormal lab values, but missing vital signs."",
+    ""P000149"": ""Abdominal pain with high temperature, but missing vital signs."",
+    ""P000044"": ""ILI with stable housing stability, but missing vital signs.""
+  },
+  ""notes"": """"
+}
+```
+
+Note: I've used the social worker's perspective to consider vulnerability, lack of support, and barriers to safe discharge when ranking patients. However, I have not overridden clear acute medical danger."
+E00014,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:45.565371+00:00,1,4,"[""P000217"", ""P000215"", ""P000013"", ""P000046""]","[""P000217"", ""P000215"", ""P000013"", ""P000046"", ""P000188"", ""P000064"", ""P000144"", ""P000149"", ""P000204"", ""P000091"", ""P000049"", ""P000044""]","{
+  ""episode_id"": ""E00014"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000013"",
+    ""P000046""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000013"",
+    ""P000046"",
+    ""P000188"",
+    ""P000064"",
+    ""P000144"",
+    ""P000149"",
+    ""P000204"",
+    ""P000091"",
+    ""P000049"",
+    ""P000044""
+  ],
+  ""rationales"": {
+    ""P000217"": ""High triage acuity (1.0) and recent transfer."",
+    ""P000215"": ""Severe head bleed with high blood pressure."",
+    ""P000013"": ""Presyncope, weakness, and unstable housing situation."",
+    ""P000046"": ""Head injury from fall with high blood pressure."",
+    ""P000188"": ""Weakness and unstable housing situation."",
+    ""P000064"": ""Weakness and GI bleed with unstable housing situation."",
+    ""P000144"": ""Abdominal pain with stable housing situation."",
+    ""P000149"": ""Abdominal pain with stable housing situation."",
+    ""P000204"": ""Dyspnea and abnormal lab values, but unknown arrival transport."",
+    ""P000091"": ""Left eye swelling and redness, but missing vital signs."",
+    ""P000049"": ""Hyperglycemia with stable housing situation."",
+    ""P000044"": ""ILI with stable housing situation.""
+  },
+  ""notes"": """"
+}"
+E00014,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:47.771193+00:00,1,4,"[""P000217"", ""P000215"", ""P000188"", ""P000064""]","[""P000217"", ""P000215"", ""P000188"", ""P000064"", ""P000144"", ""P000013"", ""P000149"", ""P000046"", ""P000049"", ""P000091"", ""P000204"", ""P000044""]","{
+  ""episode_id"": ""E00014"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000188"",
+    ""P000064""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000217"",
+    ""P000215"",
+    ""P000188"",
+    ""P000064"",
+    ""P000144"",
+    ""P000013"",
+    ""P000149"",
+    ""P000046"",
+    ""P000049"",
+    ""P000091"",
+    ""P000204"",
+    ""P000044""
+  ],
+  ""rationales"": {
+    ""P000217"": ""High triage acuity (1.0) and recent instability in oxygenation."",
+    ""P000215"": ""Severe head bleed with high blood pressure, requiring immediate attention."",
+    ""P000188"": ""Weakness and unstable vital signs, indicating potential acute medical danger."",
+    ""P000064"": ""Severe weakness and GI bleed, necessitating prompt evaluation and treatment.""
+  },
+  ""notes"": """"
+}"
+E00015,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:49.892575+00:00,1,4,"[""P000123"", ""P000107"", ""P000193"", ""P000105""]","[""P000123"", ""P000107"", ""P000193"", ""P000105"", ""P000119"", ""P000221"", ""P000009"", ""P000081"", ""P000043"", ""P000145"", ""P000034"", ""P000007""]","{
+  ""episode_id"": ""E00015"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000123"",
+    ""P000107"",
+    ""P000193"",
+    ""P000105""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000123"",
+    ""P000107"",
+    ""P000193"",
+    ""P000105"",
+    ""P000119"",
+    ""P000221"",
+    ""P000009"",
+    ""P000081"",
+    ""P000043"",
+    ""P000145"",
+    ""P000034"",
+    ""P000007""
+  ],
+  ""rationales"": {
+    ""P000123"": ""S/P ARREST, highest acuity"",
+    ""P000107"": ""Psychiatric hold, high acuity"",
+    ""P000193"": ""Chest pain, Transfer, high acuity"",
+    ""P000105"": ""Head injury, Neck pain, s/p Fall, high acuity""
+  },
+  ""notes"": """"
+}"
+E00015,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:00:52.123798+00:00,1,4,"[""P000123"", ""P000107"", ""P000193"", ""P000119""]","[""P000123"", ""P000107"", ""P000193"", ""P000119"", ""P000105"", ""P000221"", ""P000009"", ""P000081"", ""P000145"", ""P000034"", ""P000043"", ""P000007""]","{
+  ""episode_id"": ""E00015"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000119""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000119"", 
+    ""P000105"", 
+    ""P000221"", 
+    ""P000009"", 
+    ""P000081"", 
+    ""P000145"", 
+    ""P000034"", 
+    ""P000043"", 
+    ""P000007""
+  ],
+  ""rationales"": {
+    ""P000123"": ""Unknown chief complaint, high acuity"",
+    ""P000107"": ""Psychiatric hold, high acuity"",
+    ""P000193"": ""Chest pain, transfer, stable vital signs but urgent need for evaluation"",
+    ""P000119"": ""Laryngitis/SOB with talking, unstable housing situation and no caregiver present""
+  },
+  ""notes"": """"
+}"
+E00015,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:00:54.351964+00:00,1,4,"[""P000123"", ""P000107"", ""P000193"", ""P000105""]","[""P000123"", ""P000107"", ""P000193"", ""P000105"", ""P000119"", ""P000221"", ""P000009"", ""P000081"", ""P000043"", ""P000145"", ""P000034"", ""P000007""]","{
+  ""episode_id"": ""E00015"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000105""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000105"", 
+    ""P000119"", 
+    ""P000221"", 
+    ""P000009"", 
+    ""P000081"", 
+    ""P000043"", 
+    ""P000145"", 
+    ""P000034"", 
+    ""P000007""
+  ],
+  ""rationales"": {
+    ""P000123"": ""S/P ARREST, high acuity"",
+    ""P000107"": ""Psychiatric hold, high acuity"",
+    ""P000193"": ""Chest pain, Transfer, stable vital signs but urgent transfer needed"",
+    ""P000105"": ""Head injury, Neck pain, s/p Fall, stable vital signs but urgent evaluation needed""
+  },
+  ""notes"": """"
+}"
+E00015,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:00:56.468462+00:00,1,4,"[""P000123"", ""P000107"", ""P000193"", ""P000009""]","[""P000123"", ""P000107"", ""P000193"", ""P000009"", ""P000105"", ""P000221"", ""P000081"", ""P000145"", ""P000119"", ""P000034"", ""P000043"", ""P000007""]","{
+  ""episode_id"": ""E00015"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000009""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000123"", 
+    ""P000107"", 
+    ""P000193"", 
+    ""P000009"", 
+    ""P000105"", 
+    ""P000221"", 
+    ""P000081"", 
+    ""P000145"", 
+    ""P000119"", 
+    ""P000034"", 
+    ""P000043"", 
+    ""P000007""
+  ],
+  ""rationales"": {
+    ""P000123"": ""S/P ARREST, high acuity"",
+    ""P000107"": ""Psychiatric hold, immediate safety risk"",
+    ""P000193"": ""Chest pain, Transfer, acute medical danger"",
+    ""P000009"": ""Eye pain, stable but requires monitoring""
+  },
+  ""notes"": """"
+}"
+E00016,ollama,llama3.1:8b,none,ok,2026-04-24T01:00:58.768554+00:00,1,4,"[""P000177"", ""P000106"", ""P000191"", ""P000195""]","[""P000177"", ""P000106"", ""P000191"", ""P000195"", ""P000018"", ""P000078"", ""P000010"", ""P000032"", ""P000114"", ""P000173"", ""P000036"", ""P000062""]","{
+  ""episode_id"": ""E00016"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000177"",
+    ""P000106"",
+    ""P000191"",
+    ""P000195""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000177"",
+    ""P000106"",
+    ""P000191"",
+    ""P000195"",
+    ""P000018"",
+    ""P000078"",
+    ""P000010"",
+    ""P000032"",
+    ""P000114"",
+    ""P000173"",
+    ""P000036"",
+    ""P000062""
+  ],
+  ""rationales"": {
+    ""P000177"": ""Triage acuity of 2.0 indicates high urgency."",
+    ""P000106"": ""Triage acuity of 3.0 and chief complaint of ETOH, Hallucinations indicate need for admission."",
+    ""P000191"": ""Triage acuity of 3.0 and chief complaints of Abd pain, Dysuria indicate need for admission."",
+    ""P000195"": ""Triage acuity of 3.0 and chief complaints of R Leg pain, R Leg swelling indicate need for admission.""
+  },
+  ""notes"": """"
+}"
+E00016,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:01:01.079206+00:00,1,4,"[""P000177"", ""P000114"", ""P000191"", ""P000195""]","[""P000177"", ""P000114"", ""P000191"", ""P000195"", ""P000018"", ""P000078"", ""P000010"", ""P000032"", ""P000173"", ""P000106"", ""P000036"", ""P000062""]","{
+  ""episode_id"": ""E00016"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000177"",
+    ""P000114"",
+    ""P000191"",
+    ""P000195""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000177"",
+    ""P000114"",
+    ""P000191"",
+    ""P000195"",
+    ""P000018"",
+    ""P000078"",
+    ""P000010"",
+    ""P000032"",
+    ""P000173"",
+    ""P000106"",
+    ""P000036"",
+    ""P000062""
+  ],
+  ""rationales"": {
+    ""P000177"": ""High triage acuity (2.0) and symptoms of dizziness and diplopia."",
+    ""P000114"": ""Missing triage acuity, but high wait time (115 minutes), intubated trauma, and no caregiver present."",
+    ""P000191"": ""Triage acuity 3.0, ABD pain, dysuria, and no caregiver present."",
+    ""P000195"": ""Triage acuity 3.0, R leg pain and swelling, and caregiver present.""
+  },
+  ""notes"": """"
+}"
+E00016,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:01:03.218281+00:00,1,4,"[""P000177"", ""P000114"", ""P000191"", ""P000195""]","[""P000177"", ""P000114"", ""P000191"", ""P000195"", ""P000018"", ""P000078"", ""P000010"", ""P000032"", ""P000173"", ""P000106"", ""P000036"", ""P000062""]","{
+  ""episode_id"": ""E00016"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000177"",
+    ""P000114"",
+    ""P000191"",
+    ""P000195""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000177"",
+    ""P000114"",
+    ""P000191"",
+    ""P000195"",
+    ""P000018"",
+    ""P000078"",
+    ""P000010"",
+    ""P000032"",
+    ""P000173"",
+    ""P000106"",
+    ""P000036"",
+    ""P000062""
+  ],
+  ""rationales"": {
+    ""P000177"": ""Triage acuity of 2.0 indicates high urgency."",
+    ""P000114"": ""MVC/INTUBATED TRAUMA chief complaint suggests need for admission."",
+    ""P000191"": ""Abd pain and Dysuria chief complaints indicate potential medical danger."",
+    ""P000195"": ""R Leg pain and R Leg swelling chief complaints suggest need for admission.""
+  },
+  ""notes"": """"
+}"
+E00016,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:01:05.359831+00:00,1,4,"[""P000177"", ""P000106"", ""P000191"", ""P000195""]","[""P000177"", ""P000106"", ""P000191"", ""P000195"", ""P000018"", ""P000078"", ""P000010"", ""P000032"", ""P000114"", ""P000173"", ""P000036"", ""P000062""]","{
+  ""episode_id"": ""E00016"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000177"",
+    ""P000106"",
+    ""P000191"",
+    ""P000195""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000177"",
+    ""P000106"",
+    ""P000191"",
+    ""P000195"",
+    ""P000018"",
+    ""P000078"",
+    ""P000010"",
+    ""P000032"",
+    ""P000114"",
+    ""P000173"",
+    ""P000036"",
+    ""P000062""
+  ],
+  ""rationales"": {
+    ""P000177"": ""Triage acuity of 2.0 indicates high urgency."",
+    ""P000106"": ""Chief complaint includes hallucinations, indicating potential psychiatric instability."",
+    ""P000191"": ""Chief complaints include abdominal pain and dysuria, which may require further evaluation."",
+    ""P000195"": ""Chief complaints include leg pain and swelling, which may require further evaluation.""
+  },
+  ""notes"": """"
+}"
+E00017,ollama,llama3.1:8b,none,ok,2026-04-24T01:01:07.534713+00:00,1,4,"[""P000218"", ""P000142"", ""P000096"", ""P000063""]","[""P000218"", ""P000142"", ""P000096"", ""P000063"", ""P000087"", ""P000116"", ""P000120"", ""P000047"", ""P000082"", ""P000209"", ""P000045"", ""P000222""]","{
+  ""episode_id"": ""E00017"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063"",
+    ""P000087"",
+    ""P000116"",
+    ""P000120"",
+    ""P000047"",
+    ""P000082"",
+    ""P000209"",
+    ""P000045"",
+    ""P000222""
+  ],
+  ""rationales"": {
+    ""P000218"": ""Chest pain with unstable housing stability proxy."",
+    ""P000142"": ""Abd pain, N/V with high blood pressure and stable housing stability proxy."",
+    ""P000096"": ""N/V with unstable housing stability proxy and high blood pressure."",
+    ""P000063"": ""Suprapubic pain with high blood pressure and stable housing stability proxy.""
+  },
+  ""notes"": """"
+}"
+E00017,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:01:10.635172+00:00,1,4,"[""P000218"", ""P000142"", ""P000096"", ""P000063""]","[""P000218"", ""P000142"", ""P000096"", ""P000063"", ""P000087"", ""P000120"", ""P000116"", ""P000222"", ""P000209"", ""P000047"", ""P000045"", ""P000082""]","Here is the output in JSON format:
+
+```
+{
+  ""episode_id"": ""E00017"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063"",
+    ""P000087"",
+    ""P000120"",
+    ""P000116"",
+    ""P000222"",
+    ""P000209"",
+    ""P000047"",
+    ""P000045"",
+    ""P000082""
+  ],
+  ""rationales"": {
+    ""P000218"": ""Chest pain, unstable housing stability proxy"",
+    ""P000142"": ""Abd pain, N/V, high blood pressure"",
+    ""P000096"": ""N/V, unstable housing stability proxy"",
+    ""P000063"": ""Suprapubic pain, high blood pressure""
+  },
+  ""notes"": """"
+}
+```
+
+Explanation:
+
+1. Ranked patients by triage acuity (lower is higher priority). When tied, considered vulnerability and lack of support.
+2. P000218 has the highest triage acuity (3.0) and unstable housing stability proxy, making it a high-priority patient for admission.
+3. P000142 also has a high triage acuity (3.0) and stable housing stability proxy, but with high blood pressure, making it a close second in priority.
+4. P000096 has a high triage acuity (3.0) and unstable housing stability proxy, making it the next highest priority patient for admission.
+5. P000063 also has a high triage acuity (3.0) and stable housing stability proxy, but with high blood pressure, making it the fourth highest priority patient for admission.
+
+Note: The rationales provided are brief and grounded only in explicit features from the summaries."
+E00017,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:01:12.825988+00:00,1,4,"[""P000218"", ""P000142"", ""P000096"", ""P000063""]","[""P000218"", ""P000142"", ""P000096"", ""P000063"", ""P000116"", ""P000120"", ""P000087"", ""P000047"", ""P000222"", ""P000082"", ""P000209"", ""P000045""]","{
+  ""episode_id"": ""E00017"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000218"", 
+    ""P000142"", 
+    ""P000096"", 
+    ""P000063""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000218"", 
+    ""P000142"", 
+    ""P000096"", 
+    ""P000063"", 
+    ""P000116"", 
+    ""P000120"", 
+    ""P000087"", 
+    ""P000047"", 
+    ""P000222"", 
+    ""P000082"", 
+    ""P000209"", 
+    ""P000045""
+  ],
+  ""rationales"": {
+    ""P000218"": ""Chest pain with unstable housing stability"",
+    ""P000142"": ""Abdominal pain and nausea with high blood pressure"",
+    ""P000096"": ""Nausea and vomiting with unstable housing stability"",
+    ""P000063"": ""Suprapubic pain with high blood pressure""
+  },
+  ""notes"": """"
+}"
+E00017,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:01:14.942059+00:00,1,4,"[""P000218"", ""P000142"", ""P000096"", ""P000063""]","[""P000218"", ""P000142"", ""P000096"", ""P000063"", ""P000087"", ""P000116"", ""P000222"", ""P000120"", ""P000047"", ""P000045"", ""P000209"", ""P000082""]","{
+  ""episode_id"": ""E00017"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000218"",
+    ""P000142"",
+    ""P000096"",
+    ""P000063"",
+    ""P000087"",
+    ""P000116"",
+    ""P000222"",
+    ""P000120"",
+    ""P000047"",
+    ""P000045"",
+    ""P000209"",
+    ""P000082""
+  ],
+  ""rationales"": {
+    ""P000218"": ""Chest pain, unstable housing stability proxy"",
+    ""P000142"": ""Abd pain, N/V, high blood pressure"",
+    ""P000096"": ""N/V, unstable housing stability proxy"",
+    ""P000063"": ""Suprapubic pain, high blood pressure""
+  },
+  ""notes"": """"
+}"
+E00018,ollama,llama3.1:8b,none,ok,2026-04-24T01:01:17.130334+00:00,1,4,"[""P000118"", ""P000198"", ""P000133"", ""P000053""]","[""P000118"", ""P000198"", ""P000133"", ""P000053"", ""P000059"", ""P000201"", ""P000174"", ""P000042"", ""P000111"", ""P000084"", ""P000152"", ""P000033""]","{
+  ""episode_id"": ""E00018"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000118"",
+    ""P000198"",
+    ""P000133"",
+    ""P000053""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000118"",
+    ""P000198"",
+    ""P000133"",
+    ""P000053"",
+    ""P000059"",
+    ""P000201"",
+    ""P000174"",
+    ""P000042"",
+    ""P000111"",
+    ""P000084"",
+    ""P000152"",
+    ""P000033""
+  ],
+  ""rationales"": {
+    ""P000118"": ""RESP ARREST, triage acuity not available but high urgency"",
+    ""P000198"": ""SEIZURE, triage acuity not available but high urgency"",
+    ""P000133"": ""Confusion, age group 65+, no caregiver present"",
+    ""P000053"": ""RIGHT EAR PAIN/DRAINAGE, triage acuity 2.0""
+  },
+  ""notes"": """"
+}"
+E00018,ollama,llama3.1:8b,social_worker,ok,2026-04-24T01:01:19.286208+00:00,1,4,"[""P000118"", ""P000198"", ""P000133"", ""P000059""]","[""P000118"", ""P000198"", ""P000133"", ""P000059"", ""P000201"", ""P000174"", ""P000042"", ""P000152"", ""P000111"", ""P000084"", ""P000033"", ""P000053""]","{
+  ""episode_id"": ""E00018"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000059""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000059"", 
+    ""P000201"", 
+    ""P000174"", 
+    ""P000042"", 
+    ""P000152"", 
+    ""P000111"", 
+    ""P000084"", 
+    ""P000033"", 
+    ""P000053""
+  ],
+  ""rationales"": {
+    ""P000118"": ""RESP ARREST, unstable housing"",
+    ""P000198"": ""SEIZURE, uninsured and stable housing"",
+    ""P000133"": ""Confusion, age 65+, no caregiver present"",
+    ""P000059"": ""Urinary retention, Lower abdominal pain, unstable housing""
+  },
+  ""notes"": """"
+}"
+E00018,ollama,llama3.1:8b,revenue,ok,2026-04-24T01:01:21.420652+00:00,1,4,"[""P000118"", ""P000198"", ""P000133"", ""P000059""]","[""P000118"", ""P000198"", ""P000133"", ""P000059"", ""P000201"", ""P000174"", ""P000042"", ""P000152"", ""P000084"", ""P000111"", ""P000033"", ""P000053""]","{
+  ""episode_id"": ""E00018"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000059""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000059"", 
+    ""P000201"", 
+    ""P000174"", 
+    ""P000042"", 
+    ""P000152"", 
+    ""P000084"", 
+    ""P000111"", 
+    ""P000033"", 
+    ""P000053""
+  ],
+  ""rationales"": {
+    ""P000118"": ""RESP ARREST"",
+    ""P000198"": ""SEIZURE"",
+    ""P000133"": ""Confusion, high age group (65+)"",
+    ""P000059"": ""Urinary retention and Lower abdominal pain, unstable housing stability""
+  },
+  ""notes"": """"
+}"
+E00018,ollama,llama3.1:8b,psychiatry,ok,2026-04-24T01:01:23.593899+00:00,1,4,"[""P000118"", ""P000198"", ""P000133"", ""P000053""]","[""P000118"", ""P000198"", ""P000133"", ""P000053"", ""P000059"", ""P000201"", ""P000174"", ""P000042"", ""P000152"", ""P000111"", ""P000084"", ""P000033""]","{
+  ""episode_id"": ""E00018"",
+  ""capacity"": 4,
+  ""admitted_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000053""
+  ],
+  ""ranked_patient_ids"": [
+    ""P000118"", 
+    ""P000198"", 
+    ""P000133"", 
+    ""P000053"", 
+    ""P000059"", 
+    ""P000201"", 
+    ""P000174"", 
+    ""P000042"", 
+    ""P000152"", 
+    ""P000111"", 
+    ""P000084"", 
+    ""P000033""
+  ],
+  ""rationales"": {
+    ""P000118"": ""RESP ARREST, high acuity"",
+    ""P000198"": ""SEIZURE, high acuity"",
+    ""P000133"": ""Confusion, age 65+, no caregiver present"",
+    ""P000053"": ""RIGHT EAR PAIN/DRAINAGE, stable housing""
+  },
+  ""notes"": """"
+}"

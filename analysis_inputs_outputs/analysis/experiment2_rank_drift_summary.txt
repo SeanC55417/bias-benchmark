@@ -1,0 +1,21 @@
+KENDALL TAU BY MODEL AND PERSONA
+                               kendall_tau
+model_name      persona                   
+llama3.1:8b     psychiatry           0.727
+                revenue              0.823
+                social_worker        0.758
+llama3.2:latest psychiatry           0.532
+                revenue              0.721
+                social_worker        0.625
+qwen2.5:7b      psychiatry           0.756
+                revenue              0.673
+                social_worker        0.724
+
+KENDALL TAU BY MODEL
+                 kendall_tau
+model_name                  
+llama3.1:8b            0.769
+llama3.2:latest        0.626
+qwen2.5:7b             0.718
+
+Saved experiments/experiment2/analysis/experiment2_rank_drift_episode_level.csv

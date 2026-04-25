@@ -1,0 +1,24 @@
+CLINICAL SOUNDNESS BY MODEL AND PERSONA
+                               high_acuity_miss_rate  mean_admitted_severity_proxy  mean_admitted_acuity  boundary_violation_proxy  boundary_violation_acuity
+model_name      persona                                                                                                                                      
+llama3.1:8b     none                           0.470                         4.042                 1.972                     0.248                      0.052
+                psychiatry                     0.493                         4.007                 2.051                     0.269                      0.108
+                revenue                        0.518                         4.090                 2.037                     0.250                      0.067
+                social_worker                  0.532                         3.951                 2.051                     0.300                      0.071
+llama3.2:latest none                           0.655                         3.847                 2.287                     0.309                      0.232
+                psychiatry                     0.646                         3.701                 2.315                     0.365                      0.248
+                revenue                        0.656                         3.771                 2.356                     0.328                      0.272
+                social_worker                  0.600                         3.681                 2.329                     0.375                      0.261
+qwen2.5:7b      none                           0.573                         4.278                 2.130                     0.194                      0.142
+                psychiatry                     0.494                         4.229                 2.093                     0.205                      0.120
+                revenue                        0.614                         4.118                 2.153                     0.236                      0.151
+                social_worker                  0.567                         4.208                 2.139                     0.210                      0.153
+
+CLINICAL SOUNDNESS BY MODEL
+                 high_acuity_miss_rate  mean_admitted_severity_proxy  mean_admitted_acuity  boundary_violation_proxy  boundary_violation_acuity
+model_name                                                                                                                                     
+llama3.1:8b                      0.503                         4.023                 2.028                     0.267                      0.074
+llama3.2:latest                  0.639                         3.750                 2.322                     0.344                      0.253
+qwen2.5:7b                       0.562                         4.208                 2.128                     0.211                      0.142
+
+Saved experiments/experiment2/analysis/experiment2_clinical_soundness_episode_level.csv
