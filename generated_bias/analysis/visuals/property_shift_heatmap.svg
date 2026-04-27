@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1458" height="562" viewBox="0 0 1458 562" role="img">
+<rect width="1458" height="562" fill="white"/>
+<text x="32.0" y="38.0" font-size="22" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="700">Persona Property Shift</text>
+<text x="32.0" y="62.0" font-size="13" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">Cells show positional_mean_delta_mean; positive means higher-property patients moved upward vs baseline.</text>
+<text x="285.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">clinical_priority_score</text>
+<text x="435.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">social_vulnerability_score</text>
+<text x="585.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">financial_pressure_score</text>
+<text x="735.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">psychiatric_need_score</text>
+<text x="885.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">resource_intensity_score</text>
+<text x="1035.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">cost_usd_norm</text>
+<text x="1185.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">psych_norm</text>
+<text x="1335.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">caregiver_absent_norm</text>
+<text x="196.0" y="138.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b | psychiatry</text>
+<rect x="210.0" y="112.0" width="146.0" height="38.0" fill="#ddebea" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.004</text>
+<rect x="360.0" y="112.0" width="146.0" height="38.0" fill="#de908d" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.021</text>
+<rect x="510.0" y="112.0" width="146.0" height="38.0" fill="#edd3d4" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.007</text>
+<rect x="660.0" y="112.0" width="146.0" height="38.0" fill="#efdedf" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.005</text>
+<rect x="810.0" y="112.0" width="146.0" height="38.0" fill="#edd4d5" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.007</text>
+<rect x="960.0" y="112.0" width="146.0" height="38.0" fill="#ecd0d0" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.008</text>
+<rect x="1110.0" y="112.0" width="146.0" height="38.0" fill="#efdedf" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.005</text>
+<rect x="1260.0" y="112.0" width="146.0" height="38.0" fill="#d7706b" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.027</text>
+<text x="196.0" y="180.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b | revenue</text>
+<rect x="210.0" y="154.0" width="146.0" height="38.0" fill="#f4f3f6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.001</text>
+<rect x="360.0" y="154.0" width="146.0" height="38.0" fill="#ebcbcb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.009</text>
+<rect x="510.0" y="154.0" width="146.0" height="38.0" fill="#efdbdc" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.006</text>
+<rect x="660.0" y="154.0" width="146.0" height="38.0" fill="#e3a8a6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.016</text>
+<rect x="810.0" y="154.0" width="146.0" height="38.0" fill="#efdcdd" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.006</text>
+<rect x="960.0" y="154.0" width="146.0" height="38.0" fill="#eed7d9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.007</text>
+<rect x="1110.0" y="154.0" width="146.0" height="38.0" fill="#e3a8a6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.016</text>
+<rect x="1260.0" y="154.0" width="146.0" height="38.0" fill="#db827e" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.024</text>
+<text x="196.0" y="222.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b | social_worker</text>
+<rect x="210.0" y="196.0" width="146.0" height="38.0" fill="#e6f0f1" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.003</text>
+<rect x="360.0" y="196.0" width="146.0" height="38.0" fill="#dc8985" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.022</text>
+<rect x="510.0" y="196.0" width="146.0" height="38.0" fill="#dbeae9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.004</text>
+<rect x="660.0" y="196.0" width="146.0" height="38.0" fill="#eed8d9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.006</text>
+<rect x="810.0" y="196.0" width="146.0" height="38.0" fill="#dbeae9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.004</text>
+<rect x="960.0" y="196.0" width="146.0" height="38.0" fill="#dbeae9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.004</text>
+<rect x="1110.0" y="196.0" width="146.0" height="38.0" fill="#eed8d9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.006</text>
+<rect x="1260.0" y="196.0" width="146.0" height="38.0" fill="#cf4c45" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.035</text>
+<text x="196.0" y="264.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b | psychiatry</text>
+<rect x="210.0" y="238.0" width="146.0" height="38.0" fill="#f0e3e5" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.004</text>
+<rect x="360.0" y="238.0" width="146.0" height="38.0" fill="#c8dfdc" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.008</text>
+<rect x="510.0" y="238.0" width="146.0" height="38.0" fill="#d97975" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.026</text>
+<rect x="660.0" y="238.0" width="146.0" height="38.0" fill="#f5f8fb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.000</text>
+<rect x="810.0" y="238.0" width="146.0" height="38.0" fill="#d97a76" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.025</text>
+<rect x="960.0" y="238.0" width="146.0" height="38.0" fill="#d8746f" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.027</text>
+<rect x="1110.0" y="238.0" width="146.0" height="38.0" fill="#f5f8fb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.000</text>
+<rect x="1260.0" y="238.0" width="146.0" height="38.0" fill="#c6deda" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="263.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.008</text>
+<text x="196.0" y="306.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b | revenue</text>
+<rect x="210.0" y="280.0" width="146.0" height="38.0" fill="#d0e4e1" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.006</text>
+<rect x="360.0" y="280.0" width="146.0" height="38.0" fill="#eef4f6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.001</text>
+<rect x="510.0" y="280.0" width="146.0" height="38.0" fill="#c6dfdb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.008</text>
+<rect x="660.0" y="280.0" width="146.0" height="38.0" fill="#b4d5ce" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<rect x="810.0" y="280.0" width="146.0" height="38.0" fill="#c6deda" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.008</text>
+<rect x="960.0" y="280.0" width="146.0" height="38.0" fill="#cae0dd" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.007</text>
+<rect x="1110.0" y="280.0" width="146.0" height="38.0" fill="#b4d5ce" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<rect x="1260.0" y="280.0" width="146.0" height="38.0" fill="#b3d4cd" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="305.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<text x="196.0" y="348.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b | social_worker</text>
+<rect x="210.0" y="322.0" width="146.0" height="38.0" fill="#eff5f7" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.001</text>
+<rect x="360.0" y="322.0" width="146.0" height="38.0" fill="#a5ccc3" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.014</text>
+<rect x="510.0" y="322.0" width="146.0" height="38.0" fill="#e5b0af" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.014</text>
+<rect x="660.0" y="322.0" width="146.0" height="38.0" fill="#f0e1e3" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.005</text>
+<rect x="810.0" y="322.0" width="146.0" height="38.0" fill="#e6b2b1" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.014</text>
+<rect x="960.0" y="322.0" width="146.0" height="38.0" fill="#e4a9a7" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.016</text>
+<rect x="1110.0" y="322.0" width="146.0" height="38.0" fill="#f0e1e3" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.005</text>
+<rect x="1260.0" y="322.0" width="146.0" height="38.0" fill="#40967d" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="347.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.031</text>
+<text x="196.0" y="390.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b | psychiatry</text>
+<rect x="210.0" y="364.0" width="146.0" height="38.0" fill="#f2e9eb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.003</text>
+<rect x="360.0" y="364.0" width="146.0" height="38.0" fill="#d1e4e2" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.006</text>
+<rect x="510.0" y="364.0" width="146.0" height="38.0" fill="#f2e8eb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.003</text>
+<rect x="660.0" y="364.0" width="146.0" height="38.0" fill="#e9c4c4" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.010</text>
+<rect x="810.0" y="364.0" width="146.0" height="38.0" fill="#f1e8ea" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.003</text>
+<rect x="960.0" y="364.0" width="146.0" height="38.0" fill="#f2ecee" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.002</text>
+<rect x="1110.0" y="364.0" width="146.0" height="38.0" fill="#e9c4c4" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.010</text>
+<rect x="1260.0" y="364.0" width="146.0" height="38.0" fill="#c0dbd6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="389.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.009</text>
+<text x="196.0" y="432.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b | revenue</text>
+<rect x="210.0" y="406.0" width="146.0" height="38.0" fill="#eedadb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.006</text>
+<rect x="360.0" y="406.0" width="146.0" height="38.0" fill="#dcebea" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.004</text>
+<rect x="510.0" y="406.0" width="146.0" height="38.0" fill="#b6d6cf" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<rect x="660.0" y="406.0" width="146.0" height="38.0" fill="#eed6d7" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.007</text>
+<rect x="810.0" y="406.0" width="146.0" height="38.0" fill="#b7d6d0" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<rect x="960.0" y="406.0" width="146.0" height="38.0" fill="#b2d4cc" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.011</text>
+<rect x="1110.0" y="406.0" width="146.0" height="38.0" fill="#eed6d7" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.007</text>
+<rect x="1260.0" y="406.0" width="146.0" height="38.0" fill="#f5f8fb" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="431.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.000</text>
+<text x="196.0" y="474.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b | social_worker</text>
+<rect x="210.0" y="448.0" width="146.0" height="38.0" fill="#eccfd0" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">-0.008</text>
+<rect x="360.0" y="448.0" width="146.0" height="38.0" fill="#54a08b" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.028</text>
+<rect x="510.0" y="448.0" width="146.0" height="38.0" fill="#59a38e" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.027</text>
+<rect x="660.0" y="448.0" width="146.0" height="38.0" fill="#9dc8be" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="733.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.015</text>
+<rect x="810.0" y="448.0" width="146.0" height="38.0" fill="#5ba490" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="883.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.026</text>
+<rect x="960.0" y="448.0" width="146.0" height="38.0" fill="#519e88" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1033.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.028</text>
+<rect x="1110.0" y="448.0" width="146.0" height="38.0" fill="#9dc8be" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1183.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.015</text>
+<rect x="1260.0" y="448.0" width="146.0" height="38.0" fill="#2b8a6e" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="1333.0" y="473.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.035</text>
+</svg>

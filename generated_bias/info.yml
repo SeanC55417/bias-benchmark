@@ -1,0 +1,6 @@
+bench_name: generated_bias
+concept: Randomized patient admission priority benchmark with persona prompts.
+tasks:
+- id: generated_dataset
+  name: generated_dataset
+  storage_type: csv

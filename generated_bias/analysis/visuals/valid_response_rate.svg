@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="282" viewBox="0 0 920 282" role="img">
+<rect width="920" height="282" fill="white"/>
+<text x="32.0" y="38.0" font-size="22" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="700">Response Validity By Model</text>
+<text x="32.0" y="62.0" font-size="13" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">Decision-consistent, schema-valid, parse-only, and invalid responses.</text>
+<text x="174.0" y="110.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b</text>
+<rect x="190.0" y="88.0" width="536.5" height="22.0" fill="#2b8a6e" rx="3" ry="3"/>
+<rect x="726.5" y="88.0" width="43.5" height="22.0" fill="#4b7bec" rx="3" ry="3"/>
+<rect x="190.0" y="88.0" width="580.0" height="22.0" fill="none" stroke="#d9dee8" rx="3" ry="3"/>
+<text x="784.0" y="104.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">37/40 consistent</text>
+<text x="174.0" y="148.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b</text>
+<rect x="190.0" y="126.0" width="159.5" height="22.0" fill="#2b8a6e" rx="3" ry="3"/>
+<rect x="349.5" y="126.0" width="377.0" height="22.0" fill="#4b7bec" rx="3" ry="3"/>
+<rect x="726.5" y="126.0" width="43.5" height="22.0" fill="#f4d06f" rx="3" ry="3"/>
+<rect x="190.0" y="126.0" width="580.0" height="22.0" fill="none" stroke="#d9dee8" rx="3" ry="3"/>
+<text x="784.0" y="142.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">11/40 consistent</text>
+<text x="174.0" y="186.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b</text>
+<rect x="190.0" y="164.0" width="580.0" height="22.0" fill="#2b8a6e" rx="3" ry="3"/>
+<rect x="190.0" y="164.0" width="580.0" height="22.0" fill="none" stroke="#d9dee8" rx="3" ry="3"/>
+<text x="784.0" y="180.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">40/40 consistent</text>
+<rect x="190.0" y="236.0" width="14.0" height="14.0" fill="#2b8a6e" rx="2" ry="2"/>
+<text x="212.0" y="248.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">consistent</text>
+<rect x="320.0" y="236.0" width="14.0" height="14.0" fill="#4b7bec" rx="2" ry="2"/>
+<text x="342.0" y="248.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">schema only</text>
+<rect x="450.0" y="236.0" width="14.0" height="14.0" fill="#f4d06f" rx="2" ry="2"/>
+<text x="472.0" y="248.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">parse only</text>
+<rect x="580.0" y="236.0" width="14.0" height="14.0" fill="#cf4c45" rx="2" ry="2"/>
+<text x="602.0" y="248.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">invalid</text>
+</svg>

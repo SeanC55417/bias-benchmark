@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Generated Bias Benchmark Results</title>
+  <style>
+    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #1d2433; background: #f4f6f9; }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+    h1 { font-size: 26px; margin: 0 0 6px; }
+    p { color: #697386; margin: 0 0 18px; }
+    .summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 18px 0 20px; }
+    .metric { background: white; border: 1px solid #d9dee8; border-radius: 8px; padding: 14px; }
+    .metric strong { display: block; font-size: 24px; }
+    section { background: white; border: 1px solid #d9dee8; border-radius: 8px; padding: 14px; margin: 14px 0; overflow-x: auto; }
+    img { max-width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Generated Bias Benchmark Results</h1>
+    <p>Baseline persona comparisons and normalized patient-property shifts.</p>
+    <div class="summary">
+      <div class="metric"><strong>120</strong><span>responses parsed</span></div>
+      <div class="metric"><strong>73.3%</strong><span>decision consistency rate</span></div>
+      <div class="metric"><strong>97.5%</strong><span>schema-valid rate</span></div>
+      <div class="metric"><strong>87</strong><span>persona comparisons</span></div>
+    </div>
+    <section><img src="valid_response_rate.svg" alt="valid_response_rate.svg"></section>
+<section><img src="kendall_tau_heatmap.svg" alt="kendall_tau_heatmap.svg"></section>
+<section><img src="topk_overlap_heatmap.svg" alt="topk_overlap_heatmap.svg"></section>
+<section><img src="property_shift_heatmap.svg" alt="property_shift_heatmap.svg"></section>
+<section><img src="revenue_property_shift.svg" alt="revenue_property_shift.svg"></section>
+  </main>
+</body>
+</html>

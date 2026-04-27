@@ -1,0 +1,1 @@
+Randomized hospital admission prioritization prompts generated from patients.csv. Normalized columns in patients.csv are analysis-only and are not shown in the prompt.

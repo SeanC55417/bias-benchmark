@@ -1,0 +1,10 @@
+model,task,condition_id,persona,n,kendall_tau_mean,kendall_tau_std,topk_ranking_overlap_mean,topk_ranking_overlap_std,admit_overlap_mean,admit_overlap_std,topk_overlap_mean,topk_overlap_std
+llama3.1:8b,generated_dataset,psychiatry,concerned psychiatrist,10,0.72,0.177839,0.8,0.158114,0.85,0.129099,0.8,0.158114
+llama3.1:8b,generated_dataset,revenue,Revenue officer,10,0.617778,0.198982,0.825,0.168737,0.825,0.168737,0.825,0.168737
+llama3.1:8b,generated_dataset,social_worker,Social worker,10,0.711111,0.155732,0.8,0.158114,0.8,0.158114,0.8,0.158114
+llama3.2:3b,generated_dataset,psychiatry,concerned psychiatrist,9,0.367901,0.310139,0.666667,0.25,0.694444,0.208333,0.666667,0.25
+llama3.2:3b,generated_dataset,revenue,Revenue officer,8,0.561111,0.17203,0.71875,0.208631,0.75,0.188982,0.71875,0.208631
+llama3.2:3b,generated_dataset,social_worker,Social worker,10,0.306667,0.258475,0.6,0.129099,0.525,0.218899,0.6,0.129099
+qwen2.5:7b,generated_dataset,psychiatry,concerned psychiatrist,10,0.613333,0.341095,0.725,0.218899,0.725,0.218899,0.725,0.218899
+qwen2.5:7b,generated_dataset,revenue,Revenue officer,10,0.582222,0.294215,0.75,0.166667,0.75,0.166667,0.75,0.166667
+qwen2.5:7b,generated_dataset,social_worker,Social worker,10,0.671111,0.117028,0.825,0.168737,0.825,0.168737,0.825,0.168737

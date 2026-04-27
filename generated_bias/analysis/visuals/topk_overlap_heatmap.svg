@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="708" height="310" viewBox="0 0 708 310" role="img">
+<rect width="708" height="310" fill="white"/>
+<text x="32.0" y="38.0" font-size="22" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="700">Top-K Admission Overlap</text>
+<text x="32.0" y="62.0" font-size="13" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">1.0 means the top-K ranking set matched baseline exactly.</text>
+<text x="285.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">psychiatry</text>
+<text x="435.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">revenue</text>
+<text x="585.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">social_worker</text>
+<text x="196.0" y="138.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b</text>
+<rect x="210.0" y="112.0" width="146.0" height="38.0" fill="#53a08a" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.800</text>
+<rect x="360.0" y="112.0" width="146.0" height="38.0" fill="#4e9d87" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.825</text>
+<rect x="510.0" y="112.0" width="146.0" height="38.0" fill="#53a08a" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.800</text>
+<text x="196.0" y="180.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b</text>
+<rect x="210.0" y="154.0" width="146.0" height="38.0" fill="#6eaf9d" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.667</text>
+<rect x="360.0" y="154.0" width="146.0" height="38.0" fill="#64a996" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.719</text>
+<rect x="510.0" y="154.0" width="146.0" height="38.0" fill="#7cb6a6" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.600</text>
+<text x="196.0" y="222.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b</text>
+<rect x="210.0" y="196.0" width="146.0" height="38.0" fill="#63a895" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.725</text>
+<rect x="360.0" y="196.0" width="146.0" height="38.0" fill="#5ea691" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.750</text>
+<rect x="510.0" y="196.0" width="146.0" height="38.0" fill="#4e9d87" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.825</text>
+</svg>
