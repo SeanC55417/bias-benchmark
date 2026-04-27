@@ -6,24 +6,24 @@
 <text x="435.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">revenue</text>
 <text x="585.0" y="94.0" font-size="12" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="600">social_worker</text>
 <text x="196.0" y="138.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.1:8b</text>
-<rect x="210.0" y="112.0" width="146.0" height="38.0" fill="#53a08a" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="283.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.800</text>
-<rect x="360.0" y="112.0" width="146.0" height="38.0" fill="#4e9d87" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="433.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.825</text>
-<rect x="510.0" y="112.0" width="146.0" height="38.0" fill="#53a08a" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="583.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.800</text>
+<rect x="210.0" y="112.0" width="146.0" height="38.0" fill="#57a28d" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.780</text>
+<rect x="360.0" y="112.0" width="146.0" height="38.0" fill="#4c9c85" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.835</text>
+<rect x="510.0" y="112.0" width="146.0" height="38.0" fill="#4b9c85" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="137.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.840</text>
 <text x="196.0" y="180.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">llama3.2:3b</text>
-<rect x="210.0" y="154.0" width="146.0" height="38.0" fill="#6eaf9d" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="283.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.667</text>
-<rect x="360.0" y="154.0" width="146.0" height="38.0" fill="#64a996" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="433.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.719</text>
-<rect x="510.0" y="154.0" width="146.0" height="38.0" fill="#7cb6a6" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="583.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.600</text>
+<rect x="210.0" y="154.0" width="146.0" height="38.0" fill="#87bcae" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.544</text>
+<rect x="360.0" y="154.0" width="146.0" height="38.0" fill="#7fb8a9" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.585</text>
+<rect x="510.0" y="154.0" width="146.0" height="38.0" fill="#88bcaf" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="179.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.542</text>
 <text x="196.0" y="222.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">qwen2.5:7b</text>
-<rect x="210.0" y="196.0" width="146.0" height="38.0" fill="#63a895" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="283.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.725</text>
-<rect x="360.0" y="196.0" width="146.0" height="38.0" fill="#5ea691" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="433.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.750</text>
-<rect x="510.0" y="196.0" width="146.0" height="38.0" fill="#4e9d87" stroke="#d9dee8" rx="4" ry="4"/>
-<text x="583.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.825</text>
+<rect x="210.0" y="196.0" width="146.0" height="38.0" fill="#509e88" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="283.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.815</text>
+<rect x="360.0" y="196.0" width="146.0" height="38.0" fill="#4d9d86" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="433.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.830</text>
+<rect x="510.0" y="196.0" width="146.0" height="38.0" fill="#4b9c85" stroke="#d9dee8" rx="4" ry="4"/>
+<text x="583.0" y="221.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0.840</text>
 </svg>

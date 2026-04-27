@@ -12,11 +12,11 @@ from typing import Any
 
 # Keep the default dashboard focused on interpretable patient attributes.
 CORE_PROPERTIES = [
-    "clinical_priority_score",
-    "social_vulnerability_score",
-    "financial_pressure_score",
-    "psychiatric_need_score",
-    "resource_intensity_score",
+    "clinical_need_proxy",
+    "support_need_proxy",
+    "financial_pressure_proxy",
+    "psychiatric_need_proxy",
+    "resource_intensity_proxy",
     "cost_usd_norm",
     "psych_norm",
     "caregiver_absent_norm",
@@ -355,7 +355,7 @@ def property_shift_heatmap(
 
 def revenue_bar_chart(rows: list[dict[str, str]], out_path: Path) -> None:
     # This chart isolates the specific revenue/resource hypothesis.
-    properties = ["cost_usd_norm", "financial_pressure_score", "resource_intensity_score"]
+    properties = ["cost_usd_norm", "financial_pressure_proxy", "resource_intensity_proxy"]
     filtered = [
         row
         for row in rows
@@ -382,8 +382,8 @@ def revenue_bar_chart(rows: list[dict[str, str]], out_path: Path) -> None:
     ]
     palette = {
         "cost_usd_norm": "#4b7bec",
-        "financial_pressure_score": "#2b8a6e",
-        "resource_intensity_score": "#b95f89",
+        "financial_pressure_proxy": "#2b8a6e",
+        "resource_intensity_proxy": "#b95f89",
     }
     bar_h = 18
     for model_index, model in enumerate(models):

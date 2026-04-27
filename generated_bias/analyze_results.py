@@ -18,12 +18,12 @@ from typing import Any
 JSON_BLOCK_RE = re.compile(r"\{.*\}", re.DOTALL)
 DEFAULT_BASELINE_CONDITION = "none"
 DEFAULT_TASK = "generated_dataset"
-CORE_SCORE_COLUMNS = [
-    "clinical_priority_score",
-    "social_vulnerability_score",
-    "financial_pressure_score",
-    "psychiatric_need_score",
-    "resource_intensity_score",
+CORE_PROXY_COLUMNS = [
+    "clinical_need_proxy",
+    "support_need_proxy",
+    "financial_pressure_proxy",
+    "psychiatric_need_proxy",
+    "resource_intensity_proxy",
 ]
 
 
@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
         default="",
         help=(
             "Comma-separated patient property columns to summarize. "
-            "Defaults to all *_norm columns plus generated *_score columns."
+            "Defaults to all *_norm columns plus generated *_proxy columns."
         ),
     )
     parser.add_argument(
@@ -110,13 +110,13 @@ def default_properties(patients: dict[str, dict[str, Any]]) -> list[str]:
     if not patients:
         return []
     sample = next(iter(patients.values()))
-    # Default to normalized fields plus the generated composite scores.
+    # Default to normalized fields plus the generated measurement proxies.
     properties = [
         key
         for key, value in sample.items()
         if key.endswith("_norm") and isinstance(value, (float, int))
     ]
-    for key in CORE_SCORE_COLUMNS:
+    for key in CORE_PROXY_COLUMNS:
         if key in sample and key not in properties:
             properties.append(key)
     return properties

@@ -6,32 +6,32 @@
 <text x="540.0" y="84.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="400">0</text>
 <text x="194.0" y="132.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="600">llama3.1:8b</text>
 <text x="194.0" y="127.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">cost_usd_norm</text>
-<rect x="430.0" y="112.0" width="110.0" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
-<text x="422.0" y="126.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.018</text>
-<text x="194.0" y="149.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_score</text>
-<rect x="448.3" y="134.0" width="91.7" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
-<text x="440.3" y="148.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.015</text>
-<text x="194.0" y="171.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_score</text>
-<rect x="452.9" y="156.0" width="87.1" height="18.0" fill="#b95f89" rx="3" ry="3"/>
-<text x="444.9" y="170.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.015</text>
+<rect x="508.0" y="112.0" width="32.0" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
+<text x="500.0" y="126.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.005</text>
+<text x="194.0" y="149.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_proxy</text>
+<rect x="508.0" y="134.0" width="32.0" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
+<text x="500.0" y="148.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.005</text>
+<text x="194.0" y="171.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_proxy</text>
+<rect x="501.4" y="156.0" width="38.6" height="18.0" fill="#b95f89" rx="3" ry="3"/>
+<text x="493.4" y="170.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.006</text>
 <text x="194.0" y="218.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="600">llama3.2:3b</text>
 <text x="194.0" y="213.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">cost_usd_norm</text>
-<rect x="540.0" y="198.0" width="275.0" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
-<text x="823.0" y="212.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.046</text>
-<text x="194.0" y="235.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_score</text>
-<rect x="540.0" y="220.0" width="261.4" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
-<text x="809.4" y="234.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.044</text>
-<text x="194.0" y="257.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_score</text>
-<rect x="540.0" y="242.0" width="258.0" height="18.0" fill="#b95f89" rx="3" ry="3"/>
-<text x="806.0" y="256.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.043</text>
+<rect x="448.5" y="198.0" width="91.5" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
+<text x="440.5" y="212.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.015</text>
+<text x="194.0" y="235.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_proxy</text>
+<rect x="448.5" y="220.0" width="91.5" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
+<text x="440.5" y="234.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.015</text>
+<text x="194.0" y="257.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_proxy</text>
+<rect x="457.9" y="242.0" width="82.1" height="18.0" fill="#b95f89" rx="3" ry="3"/>
+<text x="449.9" y="256.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">-0.014</text>
 <text x="194.0" y="304.0" font-size="12" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="600">qwen2.5:7b</text>
 <text x="194.0" y="299.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">cost_usd_norm</text>
-<rect x="540.0" y="284.0" width="190.0" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
-<text x="738.0" y="298.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.032</text>
-<text x="194.0" y="321.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_score</text>
-<rect x="540.0" y="306.0" width="182.6" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
-<text x="730.6" y="320.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.030</text>
-<text x="194.0" y="343.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_score</text>
-<rect x="540.0" y="328.0" width="180.7" height="18.0" fill="#b95f89" rx="3" ry="3"/>
-<text x="728.7" y="342.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.030</text>
+<rect x="540.0" y="284.0" width="50.0" height="18.0" fill="#4b7bec" rx="3" ry="3"/>
+<text x="598.0" y="298.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.008</text>
+<text x="194.0" y="321.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">financial_pressure_proxy</text>
+<rect x="540.0" y="306.0" width="50.0" height="18.0" fill="#2b8a6e" rx="3" ry="3"/>
+<text x="598.0" y="320.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.008</text>
+<text x="194.0" y="343.0" font-size="11" fill="#697386" font-family="Inter, Arial, sans-serif" text-anchor="end" font-weight="400">resource_intensity_proxy</text>
+<rect x="540.0" y="328.0" width="68.6" height="18.0" fill="#b95f89" rx="3" ry="3"/>
+<text x="616.6" y="342.0" font-size="11" fill="#1d2433" font-family="Inter, Arial, sans-serif" text-anchor="start" font-weight="400">0.011</text>
 </svg>
