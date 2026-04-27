@@ -7,7 +7,6 @@ WORKSPACE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 DEFAULT_BENCHTOOLS_DIR="${WORKSPACE_DIR}/benchtools"
 BENCHTOOLS_DIR="${BENCHTOOLS_DIR:-${DEFAULT_BENCHTOOLS_DIR}}"
 BENCHTOOLS_INSTALL="${BENCHTOOLS_INSTALL:-git+https://github.com/ml4sts/benchtools.git}"
-AIF360_INSTALL="${AIF360_INSTALL:-git+https://github.com/Trusted-AI/AIF360.git}"
 DEFAULT_MODELS=("llama3.1:8b" "qwen2.5:7b" "llama3.2:3b")
 OLLAMA_API_URL="${OLLAMA_API_URL:-http://localhost:11434}"
 
@@ -48,9 +47,6 @@ else
   python3 -m pip install "${BENCHTOOLS_INSTALL}"
 fi
 
-echo "Installing AIF360 from ${AIF360_INSTALL}..."
-python3 -m pip install "${AIF360_INSTALL}"
-
 echo "Installing pandas<3 for benchtools compatibility..."
 python3 -m pip install "pandas<3"
 
@@ -66,3 +62,4 @@ for model in "${MODELS[@]}"; do
   echo "Running benchmark for ${model}..."
   benchtool run . -r ollama -m "${model}" -a "${OLLAMA_API_URL}" -l logs/
 done
+

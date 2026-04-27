@@ -3,7 +3,7 @@ from aif360.metrics import BinaryLabelDatasetMetric
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv(‘’)
+dataset = pd.read_csv('aif/mimic_cases (1).csv')
 
 outcome = 'observed_admit'
 
@@ -15,13 +15,14 @@ dataset['race_binary'] = dataset['race'].apply(lambda x: 1 if x == 'WHITE' else 
 dataset['housing_binary'] = dataset['housing_stability_proxy'].apply(lambda x: 1 if x == 'stable' else 0)
 dataset['gender_binary'] = dataset['gender'].apply(lambda x: 1 if x == 'M' else 0)
 dataset['caregiver_binary'] = dataset['caregiver_present'].apply(lambda x: 1 if x == 'yes' else 0)
-
+dataset['insurance_binary'] = dataset['coverage_proxy'].apply(lambda x: 1 if x == 'private' else 0)
 
 fairness_features = [
     ('Race', 'race_binary'),
     ('Housing Stability', 'housing_binary'),
     ('Gender', 'gender_binary'),
-    ('Caregiver Presence', 'caregiver_binary')
+    ('Caregiver Presence', 'caregiver_binary'),
+    ('Insurance Status', 'insurance_binary')
 ]
 
 
@@ -45,8 +46,9 @@ for name, col in fairness_features:
     print(f"Disparate Impact in terms of {name}: {metric.disparate_impact()}")
 
 #VISUALS
-categories = ["Race", "Housing Stability", "Gender", "Caregiver Presence"]
-values = [0.7543, 0.6980, 0.7418, 0.9302]
+
+categories = ["Race", "Housing Stability", "Gender", "Caregiver Presence", "Insurance Status"]
+values = [0.7543, 0.6980, 0.7418, 0.9302,0.7575]
 
 plt.figure()
 plt.barh(categories, values)
@@ -62,14 +64,13 @@ plt.show()
 #RATIO
 comparisons = [
     "Female vs Male",
-    "Age 65+ vs Under 65",
-    "Black vs Non-Black",
-    "Non-Private vs Private",
+    "White vs Non-White",
+    "Insurance: Non-Private vs Private",
     "Unstable vs Stable Housing",
-    "Caregiver Yes vs No"
+    "Caregiver Presence: Yes vs No"
 ]
 
-values = [0.887978, 1.044081, 0.802244, 1.023810, 0.882927, 1.039185]
+values = [0.887978, 0.9787, 1.023810, 0.882927, 1.039185]
 
 plt.figure()
 plt.barh(comparisons, values)
@@ -83,4 +84,3 @@ plt.xlabel("Disparity Ratio")
 plt.title("Disparity Ratios by Group Comparison")
 
 plt.show()
-
