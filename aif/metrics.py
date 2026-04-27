@@ -47,8 +47,8 @@ for name, col in fairness_features:
 
 #VISUALS
 
-categories = ["Race", "Housing Stability", "Gender", "Caregiver Presence", "Insurance Status"]
-values = [0.7543, 0.6980, 0.7418, 0.9302,0.7575]
+categories = ["Race", "Insurance Status", "Housing Stability", "Gender", "Caregiver Presence"]
+values = [0.7543, 0.7575, 0.6980, 0.7418, 0.9302,]
 
 plt.figure()
 plt.barh(categories, values)
@@ -61,26 +61,3 @@ plt.title("Disparate Impact by Category")
 
 plt.show()
 
-#RATIO
-comparisons = [
-    "Female vs Male",
-    "White vs Non-White",
-    "Insurance: Non-Private vs Private",
-    "Unstable vs Stable Housing",
-    "Caregiver Presence: Yes vs No"
-]
-
-values = [0.887978, 0.9787, 1.023810, 0.882927, 1.039185]
-
-plt.figure()
-plt.barh(comparisons, values)
-
-# threshold line
-plt.axvline(x=0.8) #<0.8Potential disadvantage to the unprivileged group.
-plt.axvline(x=1.25) #> 1.25 Potential unfair advantage to the unprivileged group
-
-
-plt.xlabel("Disparity Ratio")
-plt.title("Disparity Ratios by Group Comparison")
-
-plt.show()
